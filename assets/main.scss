@@ -1,0 +1,228 @@
+---
+---
+
+@import "minima";
+
+$base-theme: blue;
+$base-secondary: purple;
+$gray-bg: #373737;
+$gray-bg-light: #e8e8e8;
+$gray-fg: #8d8d8d;
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: $gray-fg;
+}
+
+body{
+    font-family: 'Noto Sans KR';
+}
+
+// Header area
+
+.site-header{
+    border-top:none;
+}
+
+.nav-dropdown{
+    display: inline-block;
+    position: relative;
+    cursor:default;
+
+    .group-dropdown{
+        margin-right: 20px;
+    }
+    .page-dropdown{
+        font-size: 14px;
+        display: none;
+        position:absolute;
+        .page-link{
+            background-color: white;
+            width: 140px;
+            margin: 0;
+            padding: 16px;
+            display: block;
+            position:relative;
+            left: -16px;
+            height: fit-content;
+        }
+    }
+
+    &:hover{
+        .group-dropdown{
+            color: $base-secondary;
+        }
+        .page-dropdown{
+            display:block;
+        }
+    }
+}
+
+// Footer area
+
+.site-footer{
+    background-color: $gray-bg;
+    color: white;
+    .footer{
+        display:flex;
+        justify-content: space-between;
+        .footer-col{
+            margin: 0px 16px;
+        }
+    }
+}
+
+// Main page
+
+#home-content{
+    padding-top: 0;
+}
+
+.home-banner{
+    width: 100%;
+    background-color: $base-theme;
+    height: 60vh;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+// Notice - post list
+
+.post-list{
+    margin-top: 28px;
+}
+
+.post-list-header, .post-item{
+    display: grid;
+    grid-template-columns: 80px auto 80px;
+    justify-items: center;
+
+    border-bottom: 0.5px solid $gray-fg;
+    column-gap: 8px;
+}
+
+.post-list-header{
+    font-size: 16px;
+    padding-bottom: 16px;
+}
+
+.post-item{
+    padding: 20px 0;
+    font-size: 14px;
+    .post-link{
+        font-weight: 600;
+        margin: 0;
+        justify-self: left;
+        font-size: 14px;
+        color: black;
+    }
+
+    .post-meta{
+        color: $gray-fg;
+    }
+}
+
+// Notice - post template
+
+header{
+    a{
+        cursor: pointer;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    border-bottom: 1px solid $gray-bg-light;
+}
+
+.post-title-wrapper{
+
+    display: grid;
+    justify-items: center;
+
+    margin: 16px 0;
+    .post-title{
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .post-meta{
+        // background-color: $gray-bg-light;
+        color: $gray-fg;
+        justify-self: stretch;
+        text-align: center;
+        font-size: 12px;
+        padding: 12px;
+    }
+}
+
+.post-content{
+    padding: 0 16px;
+    font-size: 14px;
+}
+
+// News - gallery template
+
+.news-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; // TODO: adjust according to width
+    gap: 12px;
+}
+
+.news-item{
+    place-self: stretch;
+    border: 0.5px solid $gray-fg;
+
+    .news-img{
+        
+    }
+
+    .news-link{
+        color: black;
+        font-weight: 600;
+    }
+}
+
+// Members
+
+.members-header *{
+    text-align: center;
+
+}
+
+.member-item{
+    display:flex;
+    width: 100%;
+
+    .member-image{
+        width: 180px;
+        height: 180px;
+        background-size: cover;
+        border-radius: 100%;
+    }
+    
+    .member-details{
+        margin-left: 36px;
+        .member-name{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .member-position, .member-college{
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+@media (min-width: 768px){
+}

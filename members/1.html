@@ -1,0 +1,20 @@
+---
+layout: page
+title: 운영자문위원회
+category: 사람들
+---
+
+{% for member in site.data.members.management %}
+
+    <div class="member-item">
+        <div class="member-image" style="background-image:
+        url({{member.image}})"></div>
+        <div class="member-details">
+            <div class="member-name">{{member.name}}</div>
+            <div class="member-position">{{member.position}}</div>
+            <div class="member-college">{{member.college}}</div>
+        </div>
+    </div>
+
+
+{% endfor %}

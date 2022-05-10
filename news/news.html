@@ -1,0 +1,23 @@
+---
+layout: page
+title: 언론보도
+category: 소식
+permalink: 'news/'
+---
+
+<main>
+    {% assign news = site.categories.news %}
+
+    <div class="news-list">
+        {%- for item in news -%}
+        <div class="news-item">
+            <div class="news-img" style="background-image:
+            url({{member.image}})"></div>
+            <a class="news-link" href="{{ item.url | relative_url }}">
+                {{ item.title | escape }}
+            </a>
+            <div class="post-meta">{{ item.date | date: "%Y.%m.%d" }}</div>
+        </div>
+        {%- endfor -%}
+    </div>
+</main>

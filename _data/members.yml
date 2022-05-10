@@ -1,0 +1,35 @@
+#------ 운영자문위원회
+management: 
+  - name: "이름"
+    image: "https://www.kixlab.org/assets/img/members/haesoo.png"
+    position: "직책"
+    college: "소속"
+
+  - name: "이름"
+    image: "https://www.kixlab.org/assets/img/members/haesoo.png"
+    position: "직책"
+    college: "소속"
+
+#------ 사회위원회
+social: 
+  - name: "이름"
+    image: "https://www.kixlab.org/assets/img/members/haesoo.png"
+    position: "직책"
+    college: "소속"
+
+  - name: "이름"
+    image: "https://www.kixlab.org/assets/img/members/haesoo.png"
+    position: "직책"
+    college: "소속"
+
+#------ 사회위원회
+social: 
+  - name: "이름"
+    image: "https://www.kixlab.org/assets/img/members/haesoo.png"
+    position: "직책"
+    college: "소속"
+
+  - name: "이름"
+    image: "https://www.kixlab.org/assets/img/members/haesoo.png"
+    position: "직책"
+    college: "소속"

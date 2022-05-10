@@ -1,0 +1,28 @@
+---
+layout: page
+title: 공지사항
+category: 소식
+permalink: "notice/"
+---
+
+<main>
+    {% assign posts = site.categories.notice %}
+
+    <div class="post-list">
+
+        <div class="post-list-header">
+            <div>카테고리</div>
+            <div>제목</div>
+            <div>작성일</div>
+        </div>
+        {%- for post in posts -%}
+        <div class="post-item">
+            <div class="post-meta">{{post.topic}}</div>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+            </a>
+            <div class="post-meta">{{ post.date | date: "%Y.%m.%d" }}</div>
+        </div>
+        {%- endfor -%}
+    </div>
+</main>
