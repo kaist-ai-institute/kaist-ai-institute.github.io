@@ -30,6 +30,15 @@ body{
 
 .site-header{
     border-top:none;
+    .wrapper{
+        max-width: 100%;
+        padding: 0 80px;
+    }
+}
+
+#logo{
+    width: 80px;
+    height: auto;
 }
 
 .nav-dropdown{
@@ -44,15 +53,17 @@ body{
         font-size: 14px;
         display: none;
         position:absolute;
+        left: -16px;
         .page-link{
             background-color: white;
             width: 140px;
             margin: 0;
             padding: 16px;
             display: block;
-            position:relative;
-            left: -16px;
             height: fit-content;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 
@@ -203,16 +214,21 @@ header{
 .member-item{
     display:flex;
     width: 100%;
+    margin-bottom: 16px;
 
     .member-image{
         width: 180px;
         height: 180px;
         background-size: cover;
+        background-position: center;
         border-radius: 100%;
     }
     
     .member-details{
         margin-left: 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         .member-name{
             font-size: 20px;
             font-weight: 600;
@@ -224,5 +240,13 @@ header{
     }
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
+    .member-item{
+        flex-direction: column;
+        align-items: center;
+        .member-details{
+            margin-left: 0;
+            width: 100%;
+        }
+    }
 }

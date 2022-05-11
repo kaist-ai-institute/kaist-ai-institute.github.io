@@ -1,12 +1,19 @@
 #------ 운영자문위원회
 management: 
   - name: "이름"
-    image: "https://www.kixlab.org/assets/img/members/haesoo.png"
+    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
     position: "직책"
     college: "소속"
+    socialmedia:
+    - type: homepage
+      link: "https://haesookim.info/"
+    - type: linkedin
+      link: "https://www.linkedin.com/"
+    - type: twitter
+      link: "https://twitter.com/?lang=en"
 
   - name: "이름"
-    image: "https://www.kixlab.org/assets/img/members/haesoo.png"
+    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
     position: "직책"
     college: "소속"
 

@@ -13,6 +13,11 @@ category: 사람들
             <div class="member-name">{{member.name}}</div>
             <div class="member-position">{{member.position}}</div>
             <div class="member-college">{{member.college}}</div>
+            <div class="member-socialmedia">
+                {% for media in member.socialmedia %}
+                    <a href={{media.link}}>{{media.type}}</a>
+                {% endfor %}
+            </div>
         </div>
     </div>
 
