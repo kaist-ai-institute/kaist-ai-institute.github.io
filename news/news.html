@@ -12,7 +12,7 @@ permalink: 'news/'
         {%- for item in news -%}
         <div class="news-item">
             <div class="news-img" style="background-image:
-            url({{member.image}})"></div>
+            url({{item.image}})"></div>
             <a class="news-link" href="{{ item.url | relative_url }}">
                 {{ item.title | escape }}
             </a>

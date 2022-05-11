@@ -20,23 +20,18 @@ management:
 #------ 사회위원회
 social: 
   - name: "이름"
-    image: "https://www.kixlab.org/assets/img/members/haesoo.png"
+    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
     position: "직책"
     college: "소속"
 
   - name: "이름"
-    image: "https://www.kixlab.org/assets/img/members/haesoo.png"
+    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
     position: "직책"
     college: "소속"
 
-#------ 사회위원회
-social: 
+#------ 교육위원회
+education: 
   - name: "이름"
-    image: "https://www.kixlab.org/assets/img/members/haesoo.png"
-    position: "직책"
-    college: "소속"
-
-  - name: "이름"
-    image: "https://www.kixlab.org/assets/img/members/haesoo.png"
+    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
     position: "직책"
     college: "소속"
