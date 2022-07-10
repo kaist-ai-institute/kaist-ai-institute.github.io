@@ -7,20 +7,24 @@ permalink: 'members/3/'
 
 {% for member in site.data.members.education %}
 
-    <div class="member-item">
-        <div class="member-image" style="background-image:
-        url({{member.image}})"></div>
-        <div class="member-details">
-            <div class="member-name">{{member.name}}</div>
-            <div class="member-position">{{member.position}}</div>
-            <div class="member-college">{{member.college}}</div>
-            <div class="member-socialmedia">
-                {% for media in member.socialmedia %}
-                    <a href={{media.link}}>{{media.type}}</a>
-                {% endfor %}
-            </div>
+<div class="member-item">
+    <div class="member-image" style="background-image:
+    url({{member.image}})"></div>
+    <div class="member-details">
+        <div class="member-name">{{member.name}}</div>
+        <div class="member-position">{{member.position}}</div>
+        <div class="member-college">{{member.college}}</div>
+        <div class="member-socialmedia">
+            {% for media in member.socialmedia %}
+                {% if media.type == "homepage" %}
+                    <i class="fa-solid fa-house-chimney"></i> <a href={{media.link}}>{{media.link}}</a>
+                {% endif %}
+                {% if media.type == "email" %}
+                    <i class="fa-solid fa-envelope"></i> <a href="mailto:{{media.link}}">{{media.link}}</a>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
-
+</div>
 
 {% endfor %}

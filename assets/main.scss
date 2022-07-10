@@ -3,11 +3,12 @@
 
 @import "minima";
 
-$base-theme: blue;
-$base-secondary: purple;
+$base-theme: rgb(0, 104, 183);
+$base-secondary: rgb(192, 64, 145);
+$base-secondary-light: rgb(210, 129, 179);
 $gray-bg: #373737;
 $gray-bg-light: #e8e8e8;
-$gray-fg: #8d8d8d;
+$gray-fg: rgb(181,182,182);
 
 h1 {
     text-align: center;
@@ -25,6 +26,11 @@ h3 {
 
 body{
     font-family: 'Noto Sans KR';
+    word-break: keep-all;
+}
+
+a {
+    color: $base-theme
 }
 
 // Header area
@@ -40,6 +46,7 @@ body{
 #logo{
     width: 80px;
     height: auto;
+    z-index: 150;
 }
 
 .nav-dropdown{
@@ -48,13 +55,15 @@ body{
     cursor:default;
 
     .group-dropdown{
-        margin-right: 20px;
+        margin: 0 20px;
+        height: 60px;
     }
     .page-dropdown{
         font-size: 14px;
         display: none;
         position:absolute;
-        left: -16px;
+        left: 0px;
+        z-index: 100;
         .page-link{
             background-color: white;
             width: 140px;
@@ -68,9 +77,15 @@ body{
         }
     }
 
+    transition: all 0.3s;
+
     &:hover{
+        transition: all 0.3s;
+        background-color: $gray-bg-light;
+
         .group-dropdown{
             color: $base-secondary;
+            font-weight: 700;
         }
         .page-dropdown{
             display:block;
@@ -78,18 +93,102 @@ body{
     }
 }
 
+@media screen and (max-width: 600px){
+
+    .site-header{
+        border-top:none;
+        .wrapper{
+            max-width: 100%;
+            padding: 0 16px;
+        }
+    }
+
+    .site-nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 9px 15px;
+        border: none;
+    }
+
+
+    .site-nav input:checked ~ .trigger{
+        display:flex !important;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .nav-dropdown{
+        width: calc(100vw - 30px);
+        display: grid;
+        grid-template-columns: 80px auto;
+        column-gap: 24px;
+        color: $base-secondary;
+        .page-dropdown{
+            display: block;
+            position: relative;
+            text-align: center;
+
+            .page-link{
+                width: 100%;
+                padding: 16px 0;
+                text-align: left;
+                color: black;
+            }
+        }
+
+        border-top: $gray-bg-light 1px solid;
+
+        &:hover{
+            background-color: white;
+    
+            .group-dropdown{
+                color: black;
+                font-weight: 500;
+            }
+        }
+    }
+    
+}
+
 // Footer area
 
 .site-footer{
     background-color: $gray-bg;
-    color: white;
+    color: rgb(202, 202, 202);
+    font-weight: 300;
     .footer{
         display:flex;
         justify-content: space-between;
         .footer-col{
             margin: 0px 16px;
         }
+
+        .footer-col.col-right{
+            margin: 0px 16px;
+            text-align: right;
+        }
     }
+}
+
+@media screen and (max-width: 600px){
+
+    .site-footer{
+        .footer{
+            font-size: 14px;
+            display:flex;
+            flex-direction: column;
+            .footer-col{
+                padding: 0;
+            }
+            .footer-col.col-right{
+                text-align: right;
+                margin: 0;
+            }
+        }
+    }
+    
+
 }
 
 // Main page
@@ -110,39 +209,135 @@ body{
     place-items: center;
 }
 
-// Notice - post list
-
-.post-list{
-    margin-top: 28px;
-}
-
-.post-list-header, .post-item{
+.col-2-wrapper{
     display: grid;
-    grid-template-columns: 80px auto 80px;
-    justify-items: center;
-
-    border-bottom: 0.5px solid $gray-fg;
-    column-gap: 8px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 80px;
+    column-gap: 100px;
 }
 
-.post-list-header{
-    font-size: 16px;
-    padding-bottom: 16px;
+.col-1-wrapper{
+    padding: 0 80px;
 }
 
-.post-item{
-    padding: 20px 0;
-    font-size: 14px;
-    .post-link{
-        font-weight: 600;
-        margin: 0;
-        justify-self: left;
-        font-size: 14px;
-        color: black;
+.home-section{
+    margin: 24px 0 48px;
+    .section-title{
+        font-weight: 700;
+        font-size: 24px;
+        margin: 16px 0;
+        padding-bottom: 16px;
+        padding-left: 8px;
+        border-bottom: 1px solid $base-theme;
+    }
+}
+
+#major-home{
+    background-color: $base-theme;
+    color: white;
+    padding: 100px 80px;
+    .section-title{
+        font-weight: 700;
+        font-size: 32px;
+    }
+    div{
+        font-weight: 300;
+        color: $gray-bg-light;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+        padding: 16px 24px;
+        border-radius: 50px;
+        border: 2px solid white;
+        display: block;
+        width: fit-content;
+        margin-top: 24px;
+        transition: all 0.3s;
+
+        &:hover{
+            background-color: white;
+            color: $base-theme;
+            transition: all 0.3s;
+        }
     }
 
-    .post-meta{
-        color: $gray-fg;
+}
+
+#news-home{
+    .news-item{
+        &:hover{
+            top: 0px;
+        }
+    }
+}
+
+#notice-home{
+    .post-list{
+        margin: 0;
+    }
+
+    .post-list-home{
+        padding: 0 12px;
+    }
+    .post-list-home .post-item{
+        display: grid;
+        grid-template-columns: auto 80px;
+        justify-items: center;
+        column-gap: 8px;
+        margin-bottom: 4px;
+
+        .post-link{
+            font-weight: 500;
+            margin: 0;
+            justify-self: left;
+            font-size: 16px;
+            color: $gray-bg;
+        }
+
+        .post-meta{
+            color: $gray-fg;
+            font-size: 14px;
+        }
+    }
+}
+
+// Notice - post list
+
+#notice{
+    .post-list{
+        margin-top: 28px;
+    }
+
+    .post-list-header, .post-item{
+        display: grid;
+        grid-template-columns: 80px auto 80px;
+        justify-items: center;
+
+        border-bottom: 0.5px solid $gray-fg;
+        column-gap: 8px;
+    }
+
+    .post-list-header{
+        font-size: 16px;
+        padding-bottom: 16px;
+    }
+
+    .post-item{
+        padding: 20px 0;
+        font-size: 14px;
+        .post-link{
+            font-weight: 600;
+            margin: 0;
+            justify-self: left;
+            font-size: 14px;
+            color: black;
+        }
+
+        .post-meta{
+            color: $gray-fg;
+        }
     }
 }
 
@@ -183,8 +378,99 @@ header{
 
 .post-content{
     padding: 0 16px;
-    font-size: 14px;
+    font-size: 16px;
 }
+
+// Events - list template
+
+#events{
+    .event-list {
+        .event-item{
+            border: 1px $gray-fg solid;
+            padding: 12px 16px;
+        }
+    }
+}
+
+
+// Seminar - list template
+
+#seminar-list{
+    .list-title{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .seminar-item{
+        border-radius: 8px;
+        margin: 24px 0;
+        .seminar-date{
+            font-weight: 600;
+            color: $base-theme;
+            font-size: 20px;
+            padding-bottom: 8px;
+            border-bottom: #373737 1.5px solid;
+        }
+
+        .seminar-video{
+            display: block;
+            padding: 8px 16px;
+            width: fit-content;
+            margin: 8px 0;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            background-color: $base-secondary-light;
+            transition: all 0.3s;
+
+            &:hover{
+                background-color: $base-secondary;
+                transition: all 0.3s;
+            }
+        }
+
+        .seminar-sublist{
+            .seminar-subitem{
+                border-radius: 8px;
+                background-color: $gray-bg-light;
+                color: black;
+                padding: 16px;
+                margin: 16px 0;
+
+                .seminar-title{
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+
+                .seminar-presenter, .seminar-debater{
+                    display: flex;
+                    align-items: flex-end;
+                    margin-top: 8px;
+                }
+
+                .seminar-label{
+                    font-size: 12px;
+                    color: white;
+                    background-color: $base-secondary;
+                    font-weight: 700;
+                    padding: 2px 4px;
+                    border-radius: 4px;
+                    margin-right: 8px;
+                }
+
+                .seminar-presenter .seminar-label {
+                    background-color: $base-secondary;
+                }
+
+                .seminar-debater .seminar-label {
+                    background-color: $base-theme;
+                }
+            }
+        }
+    }
+
+}
+
 
 // News - gallery template
 
@@ -194,10 +480,22 @@ header{
     gap: 24px;
 }
 
+@media screen and (max-width: 768px){
+    .news-list{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .news-list{
+        grid-template-columns: 1fr  ;
+    }
+}
+
 .news-item{
     place-self: stretch;
     border: 0.5px solid $gray-fg;
-    padding: 16px;
+    padding: 12px;
     position:relative;
     top: 0px;
     transition: 0.3s ease-in-out all;
@@ -212,6 +510,8 @@ header{
         height: 200px;
         margin: 0 auto 16px;
         background-color: $gray-fg;
+        background-size: cover;
+        background-position: center;
     }
 
     .news-link{
@@ -230,11 +530,11 @@ header{
 .member-item{
     display:flex;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 36px;
 
     .member-image{
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
         background-size: cover;
         background-position: center;
         border-radius: 100%;
@@ -263,6 +563,21 @@ header{
         .member-details{
             margin-left: 0;
             width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+// Pages
+
+@media screen and (max-width: 600px){
+    .page-content{
+        p, table, li{
+            font-size: 14px;
+        }
+
+        th, td{
+            padding: 8px;
         }
     }
 }

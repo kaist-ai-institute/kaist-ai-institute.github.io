@@ -1,37 +1,287 @@
 #------ 운영자문위원회
 management: 
-  - name: "이름"
-    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
-    position: "직책"
-    college: "소속"
+  - name: "류석영"
+    image: "https://inclusion.kaist.ac.kr/images/members/ryu.png"
+    position: "위원장"
+    college: "전산학부"
     socialmedia:
     - type: homepage
-      link: "https://haesookim.info/"
-    - type: linkedin
-      link: "https://www.linkedin.com/"
-    - type: twitter
-      link: "https://twitter.com/?lang=en"
+      link: "https://plrg.kaist.ac.kr/"
 
-  - name: "이름"
+  - name: "조광현"
+    image: "https://sbie.kaist.ac.kr/wp-content/uploads/2021/01/%E1%84%8C%E1%85%A9%E1%84%80%E1%85%AA%E1%86%BC%E1%84%92%E1%85%A7%E1%86%AB_2017-766x1024.jpg"
+    position: "위원"
+    college: "바이오및뇌공학과"
+    socialmedia:
+    - type: homepage
+      link: "https://sbie.kaist.ac.kr/"
+
+  - name: "오혜연"
+    image: "https://aliceoh9.github.io/assets/IMG_7384.jpg"
+    position: "위원"
+    college: "전산학부"
+    socialmedia:
+    - type: homepage
+      link: "https://uilab.kr/"
+
+  - name: "서창호"
+    image: "https://sites.google.com/site/changhosuh/_/rsrc/1294871564623/home/ChanghoSuh.JPG?height=320&width=239"
+    position: "위원"
+    college: "전기및전자공학부"
+    socialmedia:
+    - type: homepage
+      link: "http://sites.google.com/site/changhosuh"
+
+  - name: "박경렬"
+    image: "https://static.wixstatic.com/media/9b376e_6a5c56c74f6b4ed194a9fceb840b4164.jpg/v1/fill/w_420,h_568,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/KakaoTalk_20151221_073110474_edited.jpg"
+    position: "위원"
+    college: "과학기술정책대학원"
+    socialmedia:
+    - type: homepage
+      link: "http://di-lab.kaist.ac.kr"
+
+  - name: "최정우"
+    image: "https://static.wixstatic.com/media/e47096_66542b6c514e43f283c31f1be2800cde~mv2.jpg/v1/crop/x_0,y_11,w_354,h_420/fill/w_480,h_540,al_c,lg_1,q_80,enc_auto/e47096_66542b6c514e43f283c31f1be2800cde~mv2.jpg"
+    position: "위원"
+    college: "전기및전자공학부"
+    socialmedia:
+    - type: homepage
+      link: "https://www.sound.kaist.ac.kr/"
+
+  - name: "최한림"
+    image: "https://lics.kaist.ac.kr/wp-content/uploads/2019/07/professor-pic_jpg.jpg"
+    position: "위원"
+    college: "항공우주공학과"
+    socialmedia:
+    - type: homepage
+      link: "http://lics.kaist.ac.kr"
+  
+  - name: "김민혁"
+    image: "http://vclab.kaist.ac.kr/minhkim/minhkim_180x180.jpg"
+    position: "위원"
+    college: "전산학부"
+    socialmedia:
+    - type: homepage
+      link: "http://vclab.kaist.ac.kr/"
+  
+  - name: "김인준"
     image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
-    position: "직책"
-    college: "소속"
+    position: "위원"
+    college: "의과학대학원"
+    socialmedia:
+    - type: homepage
+      link: "http://www.vbsckim.com/"
+
+  - name: "조항정"
+    image: "https://btm.kaist.ac.kr/wp-content/uploads/2013/02/20150107_131252.png"
+    position: "위원"
+    college: "기술경영학부"
+    socialmedia:
+    - type: homepage
+      link: "https://www.arachnelab.com/"
 
 #------ 사회위원회
 social: 
-  - name: "이름"
-    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
-    position: "직책"
-    college: "소속"
+  - name: "류석영"
+    image: "https://inclusion.kaist.ac.kr/images/members/ryu.png"
+    position: "위원장"
+    college: "전산학부"
+    socialmedia:
+    - type: homepage
+      link: "https://plrg.kaist.ac.kr/"
 
-  - name: "이름"
-    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
-    position: "직책"
-    college: "소속"
+  - name: "조광현"
+    image: "https://sbie.kaist.ac.kr/wp-content/uploads/2021/01/%E1%84%8C%E1%85%A9%E1%84%80%E1%85%AA%E1%86%BC%E1%84%92%E1%85%A7%E1%86%AB_2017-766x1024.jpg"
+    position: "위원"
+    college: "바이오및뇌공학과"
+    socialmedia:
+    - type: homepage
+      link: "https://sbie.kaist.ac.kr/"
+
+  - name: "오혜연"
+    image: "https://aliceoh9.github.io/assets/IMG_7384.jpg"
+    position: "위원"
+    college: "전산학부"
+    socialmedia:
+    - type: homepage
+      link: "https://uilab.kr/"
+
+  - name: "김란우"
+    image: "https://lanukim.github.io/assets/images/image.jpg"
+    position: "위원"
+    college: "인문사회과학부"
+    socialmedia:
+    - type: homepage
+      link: "https://lanukim.github.io/"
+
+  - name: "박경렬"
+    image: "https://static.wixstatic.com/media/9b376e_6a5c56c74f6b4ed194a9fceb840b4164.jpg/v1/fill/w_420,h_568,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/KakaoTalk_20151221_073110474_edited.jpg"
+    position: "위원"
+    college: "과학기술정책대학원"
+    socialmedia:
+    - type: homepage
+      link: "http://di-lab.kaist.ac.kr"
+
+  - name: "우운택"
+    image: "http://uvrlab.org/img/members/WoontackWoo.png"
+    position: "위원"
+    college: "문화기술대학원"
+    socialmedia:
+    - type: homepage
+      link: "http://uvrlab.org/"
+
+  - name: "임윤경"
+    image: "http://cixd.kaist.ac.kr/media/people/youn.jpg"
+    position: "위원"
+    college: "산업디자인학과"
+    socialmedia:
+    - type: homepage
+      link: "http://cixd.kaist.ac.kr/"
+
+  - name: "전치형"
+    image: "https://stp.kaist.ac.kr/_files/people/20220517/88b9371a6687f6f361c3c12b30620847.png"
+    position: "위원"
+    college: "과학기술정책대학원"
+    socialmedia:
+    - type: homepage
+      link: "https://www.chihyungjeon.com"
+
+  - name: "정재민"
+    image: "https://hmlab.netlify.app/images/professor_profile.png"
+    position: "위원"
+    college: "문술미래전략대학원"
+    socialmedia:
+    - type: homepage
+      link: "https://hmlab.netlify.app/"
+
+  - name: "한순규"
+    image: "https://lh6.googleusercontent.com/g1iHtkNISb0kxhj1TtdsDTZUMJWSg1J_cNeqOQbGPUVePNUmr8vurWGuMOiP7MBnm3vf9X5jCk34VeqJNTVRkl0F9Lfxhdchtr9U2FdtnIRWEKyM7Y7KrhQTAYWjAzroYw=w1280"
+    position: "위원"
+    college: "화학과"
+    socialmedia:
+    - type: homepage
+      link: "https://synthesis.kaist.ac.kr/"
 
 #------ 교육위원회
 education: 
-  - name: "이름"
+  - name: "류석영"
     image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
-    position: "직책"
-    college: "소속"
+    position: "위원장"
+    college: "전산학부"
+    socialmedia:
+    - type: homepage
+      link: "https://plrg.kaist.ac.kr/"
+
+  - name: "조광현"
+    image: "https://sbie.kaist.ac.kr/wp-content/uploads/2021/01/%E1%84%8C%E1%85%A9%E1%84%80%E1%85%AA%E1%86%BC%E1%84%92%E1%85%A7%E1%86%AB_2017-766x1024.jpg"
+    position: "위원"
+    college: "바이오및뇌공학과"
+    socialmedia:
+    - type: homepage
+      link: "https://sbie.kaist.ac.kr/"
+  
+  - name: "서창호"
+    image: "https://sites.google.com/site/changhosuh/_/rsrc/1294871564623/home/ChanghoSuh.JPG?height=320&width=239"
+    position: "위원"
+    college: "전기및전자공학부"
+    socialmedia:
+    - type: homepage
+      link: "http://sites.google.com/site/changhosuh"
+
+  - name: "강완모"
+    image: "https://lh3.googleusercontent.com/Hsj8kVD6etCrS4zacRU69azfkGCp1Ou0gfrLYiZUPI9BL1eb37mwPHxK6-Q01Y1ZfT2Wdbp0OJW94vCQ6hH6xaO-8OCUxVDSGJWp2lV2R_U=w1280"
+    position: "위원"
+    college: "수리과학과"
+    socialmedia:
+    - type: homepage
+      link: "https://sites.google.com/site/wanmokang/"
+
+  - name: "김희영"
+    image: "https://lh6.googleusercontent.com/ia7apJzcPs4QTGq-byexnKNeuKnosC1MW__maV6yU5GPjT1B2G4e-jqWgeUGoiwRoDwPqFZoO7SJ-whXhASgVOToA1n0wpIGWf2wuXG3lVvKPh6j=w1280"
+    position: "위원"
+    college: "산업및시스템공학과"
+    socialmedia:
+    - type: homepage
+      link: "https://istat.kaist.ac.kr/"
+
+  - name: "양은호"
+    image: "https://mli.kaist.ac.kr/static/images/people/eunho-yang.jpg"
+    position: "위원"
+    college: "김재철AI대학원"
+    socialmedia:
+    - type: homepage
+      link: "https://mli.kaist.ac.kr"
+
+  - name: "정하웅"
+    image: "http://stat.kaist.ac.kr:2583/images/profile/hjeong.jpg"
+    position: "위원"
+    college: "물리학과"
+    socialmedia:
+    - type: homepage
+      link: "http://stat.kaist.ac.kr:2583/"
+
+  - name: "최정우"
+    image: "https://static.wixstatic.com/media/e47096_66542b6c514e43f283c31f1be2800cde~mv2.jpg/v1/crop/x_0,y_11,w_354,h_420/fill/w_480,h_540,al_c,lg_1,q_80,enc_auto/e47096_66542b6c514e43f283c31f1be2800cde~mv2.jpg"
+    position: "위원"
+    college: "전기및전자공학부"
+    socialmedia:
+    - type: homepage
+      link: "https://www.sound.kaist.ac.kr/"
+
+  - name: "홍승범"
+    image: "http://mii.kaist.ac.kr/files/attach/images/133/183/b476209c2605117122cd7a8f8295bf1e.jpg"
+    position: "위원"
+    college: "신소재공학과"
+    socialmedia:
+    - type: homepage
+      link: "http://mii.kaist.ac.kr/"
+
+  - name: "황보제민"
+    image: "https://static.wixstatic.com/media/b9198f_c71bb511f9ae48c0880279f59f811587~mv2.jpg/v1/crop/x_0,y_3,w_498,h_610/fill/w_284,h_348,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/20201021_153159_790%20(3).jpg"
+    position: "위원"
+    college: "기계공학과"
+    socialmedia:
+    - type: homepage
+      link: "https://www.railab.kaist.ac.kr/"
+
+
+#-------연구위원회
+research:
+  - name: "류석영"
+    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
+    position: "위원장"
+    college: "전산학부"
+    socialmedia:
+    - type: homepage
+      link: "https://plrg.kaist.ac.kr/"
+
+  - name: "조광현"
+    image: "https://sbie.kaist.ac.kr/wp-content/uploads/2021/01/%E1%84%8C%E1%85%A9%E1%84%80%E1%85%AA%E1%86%BC%E1%84%92%E1%85%A7%E1%86%AB_2017-766x1024.jpg"
+    position: "위원"
+    college: "바이오및뇌공학과"
+    socialmedia:
+    - type: homepage
+      link: "https://sbie.kaist.ac.kr/"
+
+
+#-------- 협력위원회
+coop: 
+  - name: "류석영"
+    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
+    position: "위원장"
+    college: "전산학부"
+    socialmedia:
+    - type: homepage
+      link: "https://plrg.kaist.ac.kr/"
+
+  - name: "조광현"
+    image: "https://sbie.kaist.ac.kr/wp-content/uploads/2021/01/%E1%84%8C%E1%85%A9%E1%84%80%E1%85%AA%E1%86%BC%E1%84%92%E1%85%A7%E1%86%AB_2017-766x1024.jpg"
+    position: "위원"
+    college: "바이오및뇌공학과"
+    socialmedia:
+    - type: homepage
+      link: "https://sbie.kaist.ac.kr/"
+
+
+#------- 함께하는 분들
+admin:

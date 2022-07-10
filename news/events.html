@@ -4,3 +4,18 @@ title: "행사/세미나"
 category: 소식
 permalink: 'events/'
 ---
+
+<main id="events">
+    {% assign events = site.categories.events %}
+
+
+    <div class="event-list">
+        {%- for event in events -%}
+        <div class="event-item">
+            <a class="post-link" href="{{ event.url | relative_url }}">
+                {{ event.title | escape }}
+            </a>
+        </div>
+        {%- endfor -%}
+    </div>
+</main>

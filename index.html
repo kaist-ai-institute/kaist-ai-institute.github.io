@@ -10,4 +10,55 @@ layout: home
 
     <div></div>
 
+    {% assign notice = site.categories.notice %}
+    
+    <div class="col-2-wrapper">
+        <div id="notice-home" class="home-section">
+            <div class="section-title">Notice</div>
+            <div class="post-list-home">
+                {%- for post in notice  limit : 5 -%}
+                <div class="post-item">
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        {{ post.title | escape }}
+                    </a>
+                    <div class="post-meta">{{ post.date | date: "%Y.%m.%d" }}</div>
+                </div>
+                {%- endfor -%}
+            </div>
+
+        </div>
+
+        <div id="seminar-home" class="home-section">
+            <div class="section-title">Upcoming Seminar</div>
+        </div>
+    </div>
+
+    <div class="col-1-wrapper" id="major-home">
+        <div class="section-title">AI 특별지정전공 안내</div>
+        <div>(예시) 전공에 대한 한 줄 소개</div>
+        <a href="{{ '/major/' | relative_url }}">상세 정보 확인하러 가기</a>
+    </div>
+
+    {% assign news = site.categories.news %}
+
+    <div class="col-1-wrapper">
+    <div class="home-section" id="news-home">
+        <div class="section-title">News</div>
+
+        <div class="news-list">
+            {%- for item in news limit: 4 -%}
+            <div class="news-item">
+                <div class="news-img" style="background-image:
+                url({{item.image}})"></div>
+                <a class="news-link" href="{{ item.url | relative_url }}">
+                    {{ item.title | escape }}
+                </a>
+                <div class="post-meta">{{ item.date | date: "%Y.%m.%d" }}</div>
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+    </div>
+
+
 </main>
