@@ -66,7 +66,7 @@ management:
       link: "http://vclab.kaist.ac.kr/"
 
   - name: "김인준"
-    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
+    image: ""
     position: "위원"
     college: "의과학대학원"
     socialmedia:
