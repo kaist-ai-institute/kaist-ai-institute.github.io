@@ -2,29 +2,32 @@
 layout: page
 title: 교육위원회
 category: 사람들
-permalink: 'members/3/'
+permalink: "members/3/"
 ---
 
-{% for member in site.data.members.education %}
+{% for member in site.data.members.education %} {% assign url = site.baseurl |
+append: member.image %}
 
 <div class="member-item">
-    <div class="member-image" style="background-image:
-    url({{member.image}})"></div>
-    <div class="member-details">
-        <div class="member-name">{{member.name}}</div>
-        <div class="member-position">{{member.position}}</div>
-        <div class="member-college">{{member.college}}</div>
-        <div class="member-socialmedia">
-            {% for media in member.socialmedia %}
-                {% if media.type == "homepage" %}
-                    <i class="fa-solid fa-house-chimney"></i> <a href={{media.link}}>{{media.link}}</a>
-                {% endif %}
-                {% if media.type == "email" %}
-                    <i class="fa-solid fa-envelope"></i> <a href="mailto:{{media.link}}">{{media.link}}</a>
-                {% endif %}
-            {% endfor %}
-        </div>
-    </div>
+	<div
+		class="member-image"
+		style="background-image:
+            url({{url}})"
+	></div>
+	<div class="member-details">
+		<div class="member-name">{{member.name}}</div>
+		<div class="member-position">{{member.position}}</div>
+		<div class="member-college">{{member.college}}</div>
+		<div class="member-socialmedia">
+			{% for media in member.socialmedia %} {% if media.type == "homepage" %}
+			<i class="fa-solid fa-house-chimney"></i>
+			<a href="{{media.link}}">{{media.link}}</a>
+			{% endif %} {% if media.type == "email" %}
+			<i class="fa-solid fa-envelope"></i>
+			<a href="mailto:{{media.link}}">{{media.link}}</a>
+			{% endif %} {% endfor %}
+		</div>
+	</div>
 </div>
 
 {% endfor %}

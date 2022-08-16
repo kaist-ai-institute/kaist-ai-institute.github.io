@@ -17,11 +17,11 @@ h1 {
 	margin-bottom: 32px;
 }
 
-h3 {
+h3.page-subtitle {
 	text-align: center;
 	font-size: 18px;
-	font-weight: 400;
-	color: $gray-fg;
+	font-weight: 600;
+	color: $base-theme;
 }
 
 body {
@@ -39,7 +39,7 @@ a {
 	border-top: none;
 	.wrapper {
 		max-width: 100%;
-		padding: 0 80px;
+		padding: 0 120px;
 	}
 }
 
@@ -93,7 +93,7 @@ a {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 	.site-header {
 		border-top: none;
 		.wrapper {
@@ -107,11 +107,40 @@ a {
 		top: 0;
 		right: 0;
 		padding: 9px 15px;
+		background-color: white;
 		border: none;
 	}
 
-	.site-nav input:checked ~ .trigger {
-		display: flex !important;
+	label[for="nav-trigger"] {
+		display: block;
+		float: right;
+		width: 36px;
+		height: 36px;
+		z-index: 2;
+		cursor: pointer;
+	}
+
+	.menu-icon {
+		display: block !important;
+		float: right;
+		width: 36px;
+		height: 26px;
+		line-height: 0;
+		padding-top: 10px;
+		text-align: center;
+
+		> svg {
+			fill: $grey-color-dark;
+		}
+	}
+
+	input ~ .trigger {
+		clear: both;
+		display: none;
+	}
+
+	input:checked ~ .trigger {
+		display: flex;
 		flex-direction: column;
 		align-items: stretch;
 	}
@@ -193,22 +222,117 @@ a {
 
 .home-banner {
 	width: 100%;
-	background: #3d72b4; /* fallback for old browsers */
-	background: -webkit-linear-gradient(
-		to top,
-		#3d72b4,
-		#fff
-	); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(
-		to top,
-		#3d72b4,
-		#fff
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	// background: #3d72b4; /* fallback for old browsers */
+	// background: -webkit-linear-gradient(
+	// 	to top,
+	// 	#3d72b4,
+	// 	#fff
+	// ); /* Chrome 10-25, Safari 5.1-6 */
+	// background: linear-gradient(
+	// 	to top,
+	// 	#3d72b4,
+	// 	#fff
+	// ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+	background-image: url("./imgs/banner/1\ ICFP\ 2021.JPG");
+	background-size: cover;
+	background-position: center;
 	height: 60vh;
 	color: white;
 	display: grid;
 	place-items: center;
+	.banner-overlay {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $base-theme;
+		opacity: 0.47;
+	}
+}
+
+// Carousel
+
+.slider-wrapper {
+	position: relative;
+	overflow: hidden;
+	.slide-arrow {
+		position: absolute;
+		display: flex;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		height: 4rem;
+		background-color: white;
+		border: none;
+		width: 2rem;
+		font-size: 3rem;
+		padding: 0;
+		cursor: pointer;
+		opacity: 0.5;
+		transition: opacity 100ms;
+	}
+
+	.slide-arrow:hover,
+	.slide-arrow:focus {
+		opacity: 1;
+	}
+
+	#slide-arrow-prev {
+		left: 0;
+		padding-left: 0.25rem;
+		border-radius: 0 2rem 2rem 0;
+	}
+
+	#slide-arrow-next {
+		right: 0;
+		padding-left: 0.75rem;
+		border-radius: 2rem 0 0 2rem;
+	}
+}
+
+.slides-container {
+	height: calc(60vh - 2rem);
+	min-height: 400px;
+	width: 100%;
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: scroll;
+	scroll-behavior: smooth;
+
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.slides-container::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+.slide {
+	width: 100%;
+	height: 100%;
+	flex: 1 0 100%;
+}
+
+.slide:nth-child(1) {
+	background-color: #49b293;
+}
+
+.slide:nth-child(2) {
+	background-color: #b03532;
+}
+
+.slide:nth-child(3) {
+	background-color: #6a478f;
+	margin: 0;
+}
+
+.slide:nth-child(4) {
+	background-color: #da6f2b;
 }
 
 .col-2-wrapper {
@@ -235,9 +359,24 @@ a {
 }
 
 #major-home {
+	background-image: url("./imgs/banner/major.jpg");
+	background-size: cover;
+	background-position: center;
 	background-color: $base-theme;
 	color: white;
-	padding: 100px 80px;
+	transform: scaleX(-1);
+	padding: 0;
+	.major-wrapper {
+		// background: $base-theme;
+		background: linear-gradient(
+			270deg,
+			transparent 0%,
+			$base-theme 65%,
+			$base-theme 100%
+		);
+		padding: 100px 80px;
+		transform: scaleX(-1);
+	}
 	.section-title {
 		font-weight: 700;
 		font-size: 32px;
@@ -431,7 +570,7 @@ header {
 			display: block;
 			padding: 8px 16px;
 			width: fit-content;
-			margin: 8px 0;
+			margin: 16px 0 8px;
 			border-radius: 50px;
 			text-decoration: none;
 			color: white;
@@ -461,7 +600,7 @@ header {
 				.seminar-debater {
 					display: flex;
 					align-items: flex-end;
-					margin-top: 8px;
+					margin: 8px 0;
 				}
 
 				.seminar-label {
