@@ -16,7 +16,7 @@ layout: home
 		</ul>
 	</section> -->
 
-	<div class="home-banner">
+	<div id="home-banner">
 		<div class="banner-overlay"></div>
 	</div>
 	<div></div>
@@ -76,18 +76,17 @@ layout: home
 </main>
 
 <script>
-	const slidesContainer = document.getElementById("slides-container");
-	const slide = document.querySelector(".slide");
-	const prevButton = document.getElementById("slide-arrow-prev");
-	const nextButton = document.getElementById("slide-arrow-next");
+	let date = new Date();
+	let month = date.getMonth();
 
-	nextButton.addEventListener("click", (event) => {
-		const slideWidth = slide.clientWidth;
-		slidesContainer.scrollLeft += slideWidth;
-	});
-
-	prevButton.addEventListener("click", () => {
-		const slideWidth = slide.clientWidth;
-		slidesContainer.scrollLeft -= slideWidth;
-	});
+	let banner = document.getElementById("home-banner");
+	if (month == 1 || month == 2 || month == 12) {
+		banner.className = "winter";
+	} else if (month == 3 || month == 4 || month == 5) {
+		banner.className = "spring";
+	} else if (month == 6 || month == 7 || month == 8) {
+		banner.className = "summer";
+	} else if (month == 9 || month == 10 || month == 11) {
+		banner.className = "fall";
+	}
 </script>

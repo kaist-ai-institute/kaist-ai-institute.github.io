@@ -26,7 +26,7 @@ management:
         link: "https://uilab.kr/"
 
   - name: "서창호"
-    image: "/assets/imgs/people/서창호.jpg"
+    image: "/assets/imgs/people/서창호.JPG"
     college: "전기및전자공학부"
     socialmedia:
       - type: homepage
@@ -123,7 +123,7 @@ social:
         link: "http://di-lab.kaist.ac.kr"
 
   - name: "우운택"
-    image: "/assets/imgs/people/우운택.jpg"
+    image: "/assets/imgs/people/우운택.png"
     position: "위원"
     college: "문화기술대학원"
     socialmedia:
@@ -181,7 +181,7 @@ education:
         link: "https://sbie.kaist.ac.kr/"
 
   - name: "서창호"
-    image: "/assets/imgs/people/서창호.jpg"
+    image: "/assets/imgs/people/서창호.JPG"
     position: "위원"
     college: "전기및전자공학부"
     socialmedia:
@@ -345,7 +345,7 @@ coop:
         link: "https://sbie.kaist.ac.kr/"
 
   - name: "서창호"
-    image: "/assets/imgs/people/서창호.jpg"
+    image: "/assets/imgs/people/서창호.JPG"
     position: "위원"
     college: "전기및전자공학부"
     socialmedia:

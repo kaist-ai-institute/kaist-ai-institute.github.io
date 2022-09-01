@@ -2,25 +2,25 @@
 layout: page
 title: 함께 하는 분들
 category: 사람들
-permalink: 'members/6/'
+permalink: "members/6/"
 ---
 
-
 <table class="member-item-list">
-    <thead>
-        <tr>
-            <th> 이름 </th>
-            <th> 소속 </th>
-            <th> 홈페이지 </th>
-        </tr>
-    </thead>
-    {% for member in site.data.members.admin %}
-    <tr class="member-details">
-        <td class="member-name">{{member.name}}</td>
-        <td class="member-college">{{member.college}}</td>
-        <td class="member-socialmedia">
-            <i class="fa-solid fa-house-chimney"></i> <a href={{media.link}}>{{member.homepage}}</a>
-        </td>
-    </tr>
-    {% endfor %}
+	<thead>
+		<tr>
+			<th>이름</th>
+			<th>소속</th>
+			<th>링크</th>
+		</tr>
+	</thead>
+	{% for member in site.data.members.admin %}
+	<tr class="member-details">
+		<td class="member-name">{{member.name}}</td>
+		<td class="member-college">{{member.college}}</td>
+		<td class="member-socialmedia">
+			<i class="fa-solid fa-house-chimney"></i>
+			<a href="{{member.homepage}}">홈페이지</a>
+		</td>
+	</tr>
+	{% endfor %}
 </table>
