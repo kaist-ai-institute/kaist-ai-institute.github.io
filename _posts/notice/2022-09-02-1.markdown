@@ -1,0 +1,9 @@
+---
+layout: post
+title: "제5회 KAIST 황당포럼"
+date: 2022-09-02 00:00:00 +0900
+categories: notice
+topic: "행사/세미나"
+---
+
+![]({{site.baseurl}}/assets/news/20220906.jpeg)
