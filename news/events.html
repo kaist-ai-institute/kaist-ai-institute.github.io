@@ -2,20 +2,20 @@
 layout: page
 title: "행사/세미나"
 category: 소식
-permalink: 'events/'
+permalink: "events/"
 ---
 
 <main id="events">
-    {% assign events = site.categories.events %}
+	{% assign events = site.categories.events %}
 
-
-    <div class="event-list">
-        {%- for event in events -%}
-        <div class="event-item">
-            <a class="post-link" href="{{ event.url | relative_url }}">
-                {{ event.title | escape }}
-            </a>
-        </div>
-        {%- endfor -%}
-    </div>
+	<div class="event-list">
+		{%- for event in events -%}
+		<div class="event-item">
+			<a class="post-link" href="{{ event.url | relative_url }}">
+				{{ event.title | escape }}
+			</a>
+			<div class="post-meta">{{ event.event-date}}</div>
+		</div>
+		{%- endfor -%}
+	</div>
 </main>

@@ -17,14 +17,19 @@ layout: home
 	</section> -->
 
 	<div id="home-banner">
-		<div class="banner-overlay"></div>
+		<div class="banner-overlay">KAIST AI 연구소</div>
 	</div>
 	<div></div>
 	{% assign notice = site.categories.notice %}
 
 	<div class="col-3-wrapper">
 		<div id="notice-home" class="home-section">
-			<div class="section-title">Notice</div>
+			<div class="section-title-wrapper">
+				<div class="section-title">Notice</div>
+				<a class="section-title-link" href="{{site.baseurl}}/notice"
+					>+ 더보기</a
+				>
+			</div>
 			<div class="post-list-home">
 				{%- for post in notice limit : 6 -%}
 				<div class="post-item">
@@ -38,7 +43,12 @@ layout: home
 		</div>
 
 		<div id="seminar-home" class="home-section">
-			<div class="section-title">Upcoming Seminar</div>
+			<div class="section-title-wrapper">
+				<div class="section-title">Upcoming Seminar</div>
+				<a class="section-title-link" href="{{site.baseurl}}/seminar"
+					>+ 더보기</a
+				>
+			</div>
 			<div class="seminar-list-home">
 				{% assign upcoming = site.data.seminar.upcoming %} {% for seminar in
 				upcoming limit : 1 %}
@@ -67,9 +77,14 @@ layout: home
 		</div>
 
 		<div id="event-home" class="home-section">
-			<div class="section-title">Upcoming Event</div>
+			<div class="section-title-wrapper">
+				<div class="section-title">Events</div>
+				<a class="section-title-link" href="{{site.baseurl}}/events"
+					>+ 더보기</a
+				>
+			</div>
 			{% assign events = site.categories.events %} {%- for post in events limit
-			: 1 -%}
+			: 2 -%}
 			<div class="post-item">
 				<a class="post-link" href="{{ post.url | relative_url }}">
 					{{ post.title | escape }}
@@ -83,7 +98,7 @@ layout: home
 	<div class="col-1-wrapper" id="major-home">
 		<div class="major-wrapper">
 			<div class="section-title">AI 특별지정전공 안내</div>
-			<div>(예시) 전공에 대한 한 줄 소개</div>
+			<div>진입과 이수요건에 대한 정보를 확인하세요.</div>
 			<a href="{{ '/major/' | relative_url }}">상세 정보 확인하러 가기</a>
 		</div>
 	</div>
