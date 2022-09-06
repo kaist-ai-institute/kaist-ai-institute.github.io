@@ -392,12 +392,7 @@ a {
 	padding: 0;
 	.major-wrapper {
 		// background: $base-theme;
-		background: linear-gradient(
-			270deg,
-			transparent 0%,
-			$base-theme 65%,
-			$base-theme 100%
-		);
+		background: linear-gradient(270deg, transparent 0%, $base-theme 65%, $base-theme 100%);
 		padding: 100px 80px;
 		transform: scaleX(-1);
 	}
@@ -507,7 +502,7 @@ a {
 			margin-bottom: 8px;
 			border-top: #8c8c8c 1px solid;
 			display: grid;
-			grid-template-columns: 150px 1fr;
+			grid-template-columns: 120px auto;
 		}
 
 		.seminar-date {
@@ -531,11 +526,32 @@ a {
 	}
 }
 
+@media screen and (max-width: 1000px) {
+	.col-3-wrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+	#event-home {
+		.post-item a {
+			font-size: 16px;
+		}
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.col-1-wrapper,
 	.col-2-wrapper,
 	.col-3-wrapper {
 		padding: 0 16px;
+	}
+
+	.home-section {
+		margin: 12px 0;
+	}
+
+	#event-home {
+		.post-item a {
+			font-size: 16px;
+		}
 	}
 
 	.col-2-wrapper,
