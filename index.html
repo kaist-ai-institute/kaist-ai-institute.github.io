@@ -17,7 +17,7 @@ layout: home
 	</section> -->
 
 	<div id="home-banner">
-		<div class="banner-overlay">KAIST AI 연구원</div>
+		<div class="banner-overlay">KAIST 인공지능연구원</div>
 	</div>
 	<div></div>
 	{% assign notice = site.categories.notice %}
@@ -26,16 +26,12 @@ layout: home
 		<div id="notice-home" class="home-section">
 			<div class="section-title-wrapper">
 				<div class="section-title">Notice</div>
-				<a class="section-title-link" href="{{site.baseurl}}/notice"
-					>+ 더보기</a
-				>
+				<a class="section-title-link" href="{{site.baseurl}}/notice">+ 더보기</a>
 			</div>
 			<div class="post-list-home">
 				{%- for post in notice limit : 6 -%}
 				<div class="post-item">
-					<a class="post-link" href="{{ post.url | relative_url }}">
-						{{ post.title | escape }}
-					</a>
+					<a class="post-link" href="{{ post.url | relative_url }}"> {{ post.title | escape }} </a>
 					<div class="post-meta">{{ post.date | date: "%Y.%m.%d" }}</div>
 				</div>
 				{%- endfor -%}
@@ -45,13 +41,10 @@ layout: home
 		<div id="seminar-home" class="home-section">
 			<div class="section-title-wrapper">
 				<div class="section-title">Upcoming Seminar</div>
-				<a class="section-title-link" href="{{site.baseurl}}/seminar"
-					>+ 더보기</a
-				>
+				<a class="section-title-link" href="{{site.baseurl}}/seminar">+ 더보기</a>
 			</div>
 			<div class="seminar-list-home">
-				{% assign upcoming = site.data.seminar.upcoming %} {% for seminar in
-				upcoming limit : 1 %}
+				{% assign upcoming = site.data.seminar.upcoming %} {% for seminar in upcoming limit : 1 %}
 				<div class="seminar-item">
 					<div class="seminar-date">{{seminar.date}}</div>
 					<div class="seminar-sublist">
@@ -79,16 +72,11 @@ layout: home
 		<div id="event-home" class="home-section">
 			<div class="section-title-wrapper">
 				<div class="section-title">Events</div>
-				<a class="section-title-link" href="{{site.baseurl}}/events"
-					>+ 더보기</a
-				>
+				<a class="section-title-link" href="{{site.baseurl}}/events">+ 더보기</a>
 			</div>
-			{% assign events = site.categories.events %} {%- for post in events limit
-			: 2 -%}
+			{% assign events = site.categories.events %} {%- for post in events limit : 2 -%}
 			<div class="post-item">
-				<a class="post-link" href="{{ post.url | relative_url }}">
-					{{ post.title | escape }}
-				</a>
+				<a class="post-link" href="{{ post.url | relative_url }}"> {{ post.title | escape }} </a>
 				<div class="post-meta">{{ post.event-date }}</div>
 			</div>
 			{%- endfor -%}
@@ -115,11 +103,8 @@ layout: home
 					<div
 						class="news-img"
 						style="background-image:
-                url({{item.image}})"
-					></div>
-					<a class="news-link" href="{{ item.url | relative_url }}">
-						{{ item.title | escape }}
-					</a>
+                url({{item.image}})"></div>
+					<a class="news-link" href="{{ item.url | relative_url }}"> {{ item.title | escape }} </a>
 					<div class="post-meta">{{ item.date | date: "%Y.%m.%d" }}</div>
 				</div>
 				{%- endfor -%}
