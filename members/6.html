@@ -13,7 +13,7 @@ permalink: "members/6/"
 			<th>링크</th>
 		</tr>
 	</thead>
-	{% for member in site.data.members.admin %}
+	{% assign members = site.data.members.admin | sort:"name" %} {% for member in members %}
 	<tr class="member-details">
 		<td class="member-name">{{member.name}}</td>
 		<td class="member-college">{{member.college}}</td>

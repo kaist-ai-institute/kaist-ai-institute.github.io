@@ -5,7 +5,8 @@ category: 사람들
 permalink: "members/5/"
 ---
 
-{% for member in site.data.members.coop %} {% assign url = member.image %}
+{% assign members = site.data.members.coop | sort:"name" %} {% for member in members %} {% assign
+url = member.image %}
 
 <div class="member-item">
 	<div

@@ -5,15 +5,14 @@ category: 사람들
 permalink: "members/1/"
 ---
 
-{% for member in site.data.members.management %} {% assign url = site.baseurl |
-append: member.image %}
+{% assign members = site.data.members.management | sort:"name" %} {% for member in members %} {%
+assign url = site.baseurl | append: member.image %}
 
 <div class="member-item">
 	<div
 		class="member-image"
 		style="background-image:
-        url({{url}})"
-	></div>
+        url({{url}})"></div>
 	<div class="member-details">
 		<div class="member-name">{{member.name}}</div>
 		<div class="member-position">{{member.position}}</div>
