@@ -8,6 +8,8 @@
 
 웹사이트 내의 여러 게시글은 Markdown (.md, .markdown 확장명) 파일로 관리됩니다.
 
+**Markdown 파일에서는 엔터 키를 두 번 눌러야 줄바꿈이 반영됩니다**. 한 줄만 띄어져 있을 경우 문단 구분이 되지 않으니 이 부분 유의 부탁드립니다.
+
 ### 게시글 내에 이미지 추가하기
 
 markdown 파일 내에 이미지를 추가할 경우, `![](이미지 주소)` 형식을 사용합니다.
@@ -16,7 +18,7 @@ markdown 파일 내에 이미지를 추가할 경우, `![](이미지 주소)` �
 
 이미지를 파일로 첨부할 경우, `assets/imgs` 폴더에 이미지를 업로드해주신 이후 `{{site.baseurl}}/assets/imgs/경로/파일이름.형식` 방식으로 첨부해 주시면 됩니다.
 
-## Github Pages 사용하기
+## Github Pages 사용하기 (추가 예정)
 
 ### 업로드
 
@@ -38,7 +40,7 @@ markdown 파일 내에 이미지를 추가할 경우, `![](이미지 주소)` �
 
 새 공지 사항 파일을 작성할 때, 각 .md (혹은 .markdown) 파일 최상단에는 아래와 같은 코드를 작성해 주세요.
 
-{% highlight ruby %}
+```
 
 layout: post
 title: "공지사항 제목"
@@ -48,7 +50,7 @@ topic: "공지사항 토픽"
 
 ---
 
-{% endhighlight %}
+```
 
 `categories : notice` 부분을 반드시 작성해주셔야 공지 사항 메뉴에서 볼 수 있는 점 유의해 주세요.
 
@@ -62,7 +64,7 @@ topic: "공지사항 토픽"
 
 `date` 항목은 게시글 업로드 날짜, `event-date`는 웹사이트 상에 표시되는 행사 날짜를 기입해 주시면 됩니다.
 
-{% highlight ruby %}
+```
 
 layout: post
 title: "제5회 KAIST 황당포럼"
@@ -72,7 +74,7 @@ categories: events
 
 ---
 
-{% endhighlight %}
+```
 
 ## 구성원 정보 추가하기
 
@@ -104,6 +106,61 @@ admin:
 
 ## Melting Pot Seminar 정보 업데이트하기
 
+Melting Pot Seminar 정보는 `_data/members.yml` 파일에서 관리합니다.
+
+**1. 이미 진행된 세미나**
+
+이미 진행되었고, 영상 링크들이 함께 공유된 경우입니다.
+
+```
+current_year: # 예시
+  - date: "2022. 01. 18" # 여기부터 새로운 단위가 시작됩니다
+    sessions:
+      - title: "AI와 민주주의"
+        presenter: "오헤연 교수(전산학부)"
+        debater: "김란우 교수(디지털인문사회과학부)"
+        link: "https://drive.google.com/file/d/1k5ElNxVyfqVPW7uNbDK-NZLGSsDZhXme/view?usp=sharing"
+      - title: AI와 미디어
+        presenter: 정재민 교수(문술미래전략대학원)
+        debater: 박경렬 교수(과학기술정책대학원)
+        link: "https://drive.google.com/file/d/1TSagqeVN-xcomdcN7WkYbYx5su6wkHcF/view?usp=sharing"
+```
+
+따옴표 및 들여쓰기 등을 가급적 기존에 업로드되어 있는 형식과 동일하게 작성해 주세요. 형식이 바뀔 경우 오류가 생길 수 있습니다.
+
+.yml 파일의 경우, **들여쓰기 형식이 다를 경우 오류가 발생하거나 업데이트가 되지 않을 수 있습니다**. 새로운 항목을 추가했는데도 웹사이트에 반영되지 않은 경우 들여쓰기를 확인해 주세요. (들여쓰기는 tab을 사용해 주시면 됩니다.)
+
+**2. 진행 예정인 세미나**
+
+```
+upcoming: # 예시
+  - date: "2022. 09. 02" # 여기부터 새로운 단위가 시작됩니다
+    sessions:
+      - title: "AI와 뉴스"
+        presenter: "차미영(전산학부)"
+        debater: "한지영(문술미래전략대학원)"
+
+      - title: AI와 국제정치경제
+        presenter: 박경렬(과학기술정책대학원)
+        debater: 오혜연(전산학부)
+```
+
+`upcoming`의 하위 항목은 진행 예정인 세미나입니다. 메인 페이지의 Upcoming Seminar 부분에 노출됩니다. 위의 `current_year` 하위의 항목과 구조는 동일하나 동영상 링크 (`link:`) 부분이 없습니다. 세미나가 진행된 후, 영상 링크 추가와 함께 `current_year` 하위로 옮겨서 업데이트해주시면 됩니다.
+
+따옴표 및 들여쓰기 등을 가급적 기존에 업로드되어 있는 형식과 동일하게 작성해 주세요. 형식이 바뀔 경우 오류가 생길 수 있습니다.
+
+.yml 파일의 경우, **들여쓰기 형식이 다를 경우 오류가 발생하거나 업데이트가 되지 않을 수 있습니다**. 새로운 항목을 추가했는데도 웹사이트에 반영되지 않은 경우 들여쓰기를 확인해 주세요. (들여쓰기는 tab을 사용해 주시면 됩니다.)
+
+**3. 연도가 지날 경우**
+
+(2023년 및 이후 연도에도 진행된다는 것을 전제로 합니다)
+
+`current_year` 항목 하위에 있는 모든 내용을 최하단의 `past_years` 이하로 넣어 주시면 됩니다. 새로운 연도의 정보는 이후 `upcoming` 및 `current_year` 항목에 새로 추가해 주시면 됩니다. `past_years` 하위로 옮겨진 내용은 Melting Pot Seminar 페이지 내에 더 이상 노출되지 않습니다.
+
+만약 Melting Pot Seminar 자체가 이후 지속되지 않을 경우, 해당 메뉴와 페이지를 숨기기 위해 별도로 웹사이트를 수정해야 합니다. 이 경우 연락 주세요.
+
 # 기타 수정 요청 및 문의 사항
 
-웹사이트 오류나 수정과 관련한 부분은 haesookim@kaist.ac.kr 혹은 haesoo1108@gmail.com으로 문의 주세요.
+웹사이트 오류나 수정과 관련한 부분은 haesookim@kaist.ac.kr (2023 2월 이전) 혹은 haesoo1108@gmail.com (2023 2월 이후)으로 문의 주세요.
+
+본 웹사이트는 Jekyll 프레임워크 상에서 작성되었고, 추가 웹사이트 수정이나 개발을 위해 데이터 구조에 대한 설명이 필요하실 경우에도 연락 주시면 알려드리겠습니다.
