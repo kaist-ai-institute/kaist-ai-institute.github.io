@@ -41,13 +41,12 @@ markdown 파일 내에 이미지를 추가할 경우, `![](이미지 주소)` �
 새 공지 사항 파일을 작성할 때, 각 .md (혹은 .markdown) 파일 최상단에는 아래와 같은 코드를 작성해 주세요.
 
 ```
-
+---
 layout: post
 title: "공지사항 제목"
 date: 2022-05-10 00:00:00 +0900
 categories: notice
 topic: "공지사항 토픽"
-
 ---
 
 ```
@@ -65,13 +64,12 @@ topic: "공지사항 토픽"
 `date` 항목은 게시글 업로드 날짜, `event-date`는 웹사이트 상에 표시되는 행사 날짜를 기입해 주시면 됩니다.
 
 ```
-
+---
 layout: post
 title: "제5회 KAIST 황당포럼"
 date: 2022-09-02 00:00:00 +0900
 event-date: "2022-09-06"
 categories: events
-
 ---
 
 ```
