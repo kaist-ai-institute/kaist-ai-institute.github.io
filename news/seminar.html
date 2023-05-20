@@ -25,14 +25,14 @@ permalink: "seminar/"
 				</div>
 				{% if session.link %}
 				<a class="seminar-video" href="{{session.link}}" target="_blank"
-					>세미나 영상</a
-				>
+					><img src="/assets/imgs/movie-videos-icon.svg"/>
+				</a>
 				{% endif %}
 			</div>
 			{% endfor %} {% if seminar.link %}
-			<a class="seminar-video" href="{{session.link}}" target="_blank"
-				>세미나 영상</a
-			>
+			<a class="seminar-video" href="{{session.link}}" target="_blank">
+				<img src="/assets/imgs/movie-videos-icon.svg"/>
+			</a>
 			{% endif %}
 		</div>
 	</div>
