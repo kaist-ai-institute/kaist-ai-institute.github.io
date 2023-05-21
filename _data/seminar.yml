@@ -4,43 +4,44 @@ current_year:
       - title: "AI와 민주주의"
         presenter: "오헤연 교수(전산학부)"
         debater: "김란우 교수(디지털인문사회과학부)"
-        link: "https://drive.google.com/file/d/1k5ElNxVyfqVPW7uNbDK-NZLGSsDZhXme/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1W42PxiGKJd2DCRF0XH8vY01gxFff8RyC/view?usp=sharing"
       - title: AI와 미디어
         presenter: 정재민 교수(문술미래전략대학원)
         debater: 박경렬 교수(과학기술정책대학원)
-        link: "https://drive.google.com/file/d/1TSagqeVN-xcomdcN7WkYbYx5su6wkHcF/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1qg2LzPO8MKkK723MC2Vg6yrw9MjxgF1R/view?usp=sharing"
 
   - date: "2022. 02. 08"
     sessions:
       - title: "AI와 공정성1: 공학자의 시각"
         presenter: "서창호 교수(전기및전자공학부)"
         debater: "전치형 교수(과학기술정책대학원)"
-        link: "https://drive.google.com/file/d/1it_DFQKBPINnpY5TnLR7faL7a-O6Ozg-/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1Q9xK8ui08IXXIDmpXeWkk6wjyV_fKdgC/view?usp=sharing"
       - title: "AI와 공정성2: 사회학자의 시각"
         presenter: 김란우 교수(디지털인문사회과학부)
         debater: 황의종 교수(전기및전자공학부)
-        link: https://drive.google.com/file/d/1bFtys3bEY-X3xNr2l-ZJpB44S8OsM0PV/view?usp=sharing
+        link: "https://drive.google.com/file/d/1TGc8nVo9_wkwQITOtb1xVTfGO_y4cN00/view?usp=sharing"
+  
   - date: "2022. 02. 22"
     sessions:
       - title: "AI와 비즈니스, 규제변화"
         presenter: "김병필 교수(기술경영학부)"
         debater: "김동휴 교수(영국 글래스고대학)"
-        link: "https://drive.google.com/file/d/1-6ExGEQi1YQQeI6qKN5CHhYGg2dFeHzZ/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1QExP9KlG28pdcvYglj53WWSGI9VSsEdb/view?usp=sharing"
       - title: "AI와 학문, 과학자 삶의 변화"
         presenter: 한순규 교수(화학과)
         debater: 참석자 모두
-        link: https://drive.google.com/file/d/1_09UCHe5iwSaNJ_jjd7NOG0P-Ci65dHy/view?usp=sharing
+        link: "https://drive.google.com/file/d/13WLFrwbChkVqwWao5ybsD1L43bAuLtTG/view?usp=sharing"
 
   - date: "2022. 03. 04"
     sessions:
       - title: "인간중심 AI 디자인"
         presenter: "임윤경 교수(산업디자인학과)"
         debater: "우운택 교수(문화기술대학원)"
-        link: "https://drive.google.com/file/d/1DgmJ74VGThlvDMAg-mTwvK7kd3pv7OWJ/view?usp=sharin"
+        link: "https://drive.google.com/file/d/1ayovEcreY7rgzZrUjYbxg9ohHxN80kJP/view?usp=sharing"
       - title: AI와 증강휴먼
         presenter: 우운택 교수(문화기술대학원)
         debater: 임윤경 교수(산업디자인학과)
-        link: https://drive.google.com/file/d/1kVEXw76vhk4LYyauIWgl26hkzpsSiQtW/view?usp=sharing
+        link: "https://drive.google.com/file/d/1DqnSl1Eh5ykcNMhj7Nno6V3seDYnABPD/view?usp=sharing"
 
   - date: "2022. 04. 01"
     sessions:
@@ -50,7 +51,7 @@ current_year:
       - title: AI와 신소재
         presenter: 홍승범 교수(신소재공학과)
         debater: 윤세영 교수(김재철AI대학원)
-    link: "https://drive.google.com/file/d/1wOIUBqF4M3ewhe3h9RqNJp-mbyl2wjLG/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1H6qjCPHbnxpkpoV8B1CLwpngDgDBWBZe/view?usp=sharing"
 
   - date: "2022. 05. 13"
     sessions:
@@ -60,26 +61,57 @@ current_year:
       - title: AI와 화학
         presenter: 김우연 교수(화학과)
         debater: 신진우 교수(김재철AI대학원)
-    link: "https://drive.google.com/file/d/1UOv1GU1Iz_p_uzoL_NmKphu0MGNowzxt/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1l-mguEz1P50jGFn7j9zy5LrLIw6Bob86/view?usp=sharing"
 
   - date: "2022. 06. 03"
     sessions:
       - title: "AI와 식물"
         presenter: "김상규 교수(생명과학과)"
         debater: "황성주 교수(김재철AI대학원)"
-    link: "https://drive.google.com/file/d/1QdN2gntPZad7tmJqnJM2aWyrWAvOU_B2/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1fW0iRezOpbnqXmzPtmaWdHJ10yx_NXLm/view?usp=sharing"
 
   - date: "2022. 07. 01"
     sessions:
       - title: "AI와 투자"
         presenter: "김우창 교수(산업및시스템공학과)"
         debater: "최호용 교수(기술경영학부)"
-        link: "https://drive.google.com/file/d/1BgnfwrrdmGRFqshTu-5qw7hIJfDpYgxj/view?usp=sharing"
-
+        link: "https://drive.google.com/file/d/1U76qAYE5fUV6I1HMo6k0d5zO9HFpp-7x/view?usp=sharing"
       - title: AI와 기후변화
-        presenter: 김형준(문술미래전략대학원)
+        presenter: 김형준 교수(문술미래전략대학원)
         debater: 정희태 교수(생명화학공학과)
-        link: "https://drive.google.com/file/d/1aLGyG_GWJdKc7APZjLYS6WAnN3O1NuvW/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1_vh1V7z-scEok1lUjotKLtO-i06B9W3p/view?usp=sharing"
+        
+  - date: "2022. 09. 02"
+    sessions:
+      - title: "AI와 뉴스"
+        presenter: "차미영 교수(전산학부)"
+        debater: "한지영 교수(문술미래전략대학원)"
+      - title: AI와 국제정치경제
+        presenter: 박경렬 교수(과학기술정책대학원)
+        debater: 오혜연 교수(전산학부)
+        link: "https://drive.google.com/file/d/1cQVAiQvjLzAQj4fTFApLPPRYZpDxFwDS/view?usp=sharing"   
+
+  - date: "2022. 10. 07"
+    sessions:
+      - title: "AI와 사회복지"
+        presenter: "최문정 교수(과학기술정책대학원)"
+        debater: "김우창 교수(산업및시스템공학과)"
+      - title: AI와 모빌리티
+        presenter: 윤국진 교수(기계공학과)
+        debater: 장기태 교수(조천식모빌리티대학원)
+        link: "https://drive.google.com/file/d/1skS61Rrt0xoXbuY0elw21NfAtGXB1M_z/view?usp=sharing" 
+
+  - date: "2022. 11. 04"
+    sessions:
+      - title: "AI와 제품"
+        presenter: "허영은 교수(기술경영학부)"
+        debater: "이의진 교수(전산학부)"
+        link: "https://drive.google.com/file/d/1N3LVrNJXc9J0JPmuRG6izLYYn-fhKWXQ/view?usp=sharing"
+      - title: 신뢰할 수 있는 AI
+        presenter: 허기홍 교수 (전산학부)
+        debater: 김병필 교수(기술경영학부)
+        link: "https://drive.google.com/file/d/1Z1dlUiEsKn9x2D59irLuQ3TdVoR9GBMs/view?usp=sharing"
+
 
 upcoming:
   - date: "2022. 09. 02"
