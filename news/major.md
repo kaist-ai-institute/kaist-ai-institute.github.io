@@ -206,6 +206,10 @@ permalink: "major/"
         <td class="tg-0lax">   뇌, 기계, 사회  </td>
     </tr>
     <tr>
+        <td class="tg-0lax">   EE469  </td>
+        <td class="tg-0lax">   뇌, 기계, 사회  </td>
+    </tr>
+    <tr>
         <td class="tg-0lax">   EE474  </td>
         <td class="tg-0lax">   멀티미디어 개론  </td>
     </tr>
