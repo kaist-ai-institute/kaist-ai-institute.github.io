@@ -172,8 +172,8 @@ permalink: "major/"
         <td class="tg-0lax">   전자공학특강 I &lt;인공지능의 철학적 문제들&gt;  </td>
     </tr>
     <tr>
-        <td class="tg-0lax" rowspan="16">   선택과목  </td>
-        <td class="tg-0lax" rowspan="14">   X+AI  </td>
+        <td class="tg-0lax" rowspan="17">   선택과목  </td>
+        <td class="tg-0lax" rowspan="15">   X+AI  </td>
         <td class="tg-0lax">   ME453  </td>
         <td class="tg-0lax">   로봇공학개론  </td>
     </tr>
@@ -228,7 +228,11 @@ permalink: "major/"
     <tr>
         <td class="tg-0lax">   PH413  </td>
         <td class="tg-0lax">   전산 물리학 개론  </td>
-    </tr>    
+    </tr> 
+    <tr>
+        <td class="tg-0lax">   CH453  </td>
+        <td class="tg-0lax">   인공지능 화학  </td>
+    </tr>   
     <tr>
         <td class="tg-0lax" rowspan="2">   AI basics  </td>
         <td class="tg-0lax">   CoE202  </td>
