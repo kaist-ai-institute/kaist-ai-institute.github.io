@@ -225,7 +225,7 @@ permalink: "major/"
         <td class="tg-0lax">   CBE481  </td>
         <td class="tg-0lax">   생명화학공학특강 &lt;생명공학을 위한 빅데이터 분석 및 기계학습&gt;  </td>
     </tr>
-        <tr>
+    <tr>
         <td class="tg-0lax">   PH413  </td>
         <td class="tg-0lax">   전산 물리학 개론  </td>
     </tr>
