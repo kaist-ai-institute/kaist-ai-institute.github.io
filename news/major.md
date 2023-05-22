@@ -5,7 +5,7 @@ category: 소식
 permalink: "major/"
 ---
 
-[학사요람 시스템에서 최신 정보 확인하기 (ENG included)](https://bulletin.kaist.ac.kr/html/kr/?year=2022&id=kr20220304&gbn=E1)
+[학사요람 시스템에서 최신 정보 확인하기 (ENG included)](https://bulletin.kaist.ac.kr/html/kr/?year=2023&id=kr20230304&gbn=E1)
 
 ## **[2022학년도 이후 이수신청자용]**
 
@@ -202,8 +202,8 @@ permalink: "major/"
         <td class="tg-0lax">   전기전자공학특강 &lt;시각인식개론&gt;  </td>
     </tr>
     <tr>
-        <td class="tg-0lax">   EE488  </td>
-        <td class="tg-0lax">   전기 전자공학특강 &lt;뇌, 기계, 사회 (Brains, machines, and societies)&gt;  </td>
+        <td class="tg-0lax">   EE469  </td>
+        <td class="tg-0lax">   뇌, 기계, 사회  </td>
     </tr>
     <tr>
         <td class="tg-0lax">   EE474  </td>
@@ -230,6 +230,10 @@ permalink: "major/"
         <td class="tg-0lax">   전산 물리학 개론  </td>
     </tr>
     <tr>
+    <td class="tg-0lax">   CH453  </td>
+    <td class="tg-0lax">   인공지능 화학  </td>
+    </tr>
+    <tr>
         <td class="tg-0lax" rowspan="2">   AI basics  </td>
         <td class="tg-0lax">   CoE202  </td>
         <td class="tg-0lax">   인공지능입문  </td>
@@ -243,4 +247,4 @@ permalink: "major/"
 
 #### **경과조치**
 
-- 위 이수요건은 2022학년도 봄학기부터 적용하며 입학년도 상관없이 모든 재학생에게 적용함
+- 위 이수요건은 2023학년도 봄학기부터 적용하며 입학년도 상관없이 모든 재학생에게 적용함
