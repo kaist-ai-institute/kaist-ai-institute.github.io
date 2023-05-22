@@ -228,7 +228,11 @@ permalink: "major/"
     <tr>
         <td class="tg-0lax">   PH413  </td>
         <td class="tg-0lax">   전산 물리학 개론  </td>
-    </tr>   
+    </tr>
+    <tr>
+        <td class="tg-0lax">   CH453  </td>
+        <td class="tg-0lax">   인공지능 화학  </td>
+    </tr>
     <tr>
         <td class="tg-0lax" rowspan="2">   AI basics  </td>
         <td class="tg-0lax">   CoE202  </td>
