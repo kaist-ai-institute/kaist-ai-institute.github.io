@@ -166,7 +166,7 @@ social:
 #------ 교육위원회
 education:
   - name: "오혜연"
-    image: "/assets/imgs/people/오혜연.png"
+    image: "/assets/imgs/people/오혜연.jpg"
     position: "위원장"
     college: "전산학부"
     socialmedia:
@@ -248,7 +248,7 @@ education:
 #-------연구위원회
 research:
   - name: "오혜연"
-    image: "/assets/imgs/people/오혜연.png"
+    image: "/assets/imgs/people/오혜연.jpg"
     position: "위원장"
     college: "전산학부"
     socialmedia:
@@ -322,7 +322,7 @@ research:
 #-------- 협력위원회
 coop:
   - name: "오혜연"
-    image: "/assets/imgs/people/오혜연.png"
+    image: "/assets/imgs/people/오혜연.jpg"
     position: "위원장"
     college: "전산학부"
     socialmedia:
