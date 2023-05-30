@@ -295,14 +295,6 @@ research:
       - type: homepage
         link: "https://sites.google.com/view/yeonseungchung"
 
-  - name: "정유성"
-    image: "/assets/imgs/people/정유성.jpg"
-    position: "위원"
-    college: "생명화학공학과"
-    socialmedia:
-      - type: homepage
-        link: "http://qchem.kaist.ac.kr/"
-
   - name: "최재식"
     image: "/assets/imgs/people/최재식.png"
     position: "위원"
