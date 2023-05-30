@@ -3,23 +3,23 @@
 management:
   - name: "류석영"
     image: "/assets/imgs/people/류석영.png"
-    position: "위원장"
+    position: "위원"
     college: "전산학부"
     socialmedia:
       - type: homepage
         link: "https://plrg.kaist.ac.kr/"
 
-  - name: "조광현"
-    image: "/assets/imgs/people/조광현.jpg"
+  - name: "조병관"
+    image: "/assets/imgs/people/조병관.jpg"
     position: "위원"
-    college: "바이오및뇌공학과"
+    college: "생명과학과"
     socialmedia:
       - type: homepage
-        link: "https://sbie.kaist.ac.kr/"
+        link: "http://cholab.or.kr/"
 
   - name: "오혜연"
     image: "/assets/imgs/people/오혜연.jpg"
-    position: "위원"
+    position: "위원장"
     college: "전산학부"
     socialmedia:
       - type: homepage
@@ -27,6 +27,7 @@ management:
 
   - name: "서창호"
     image: "/assets/imgs/people/서창호.JPG"
+    position: "위원"
     college: "전기및전자공학부"
     socialmedia:
       - type: homepage
@@ -84,23 +85,23 @@ management:
 social:
   - name: "류석영"
     image: "/assets/imgs/people/류석영.png"
-    position: "위원장"
+    position: "위원"
     college: "전산학부"
     socialmedia:
       - type: homepage
         link: "https://plrg.kaist.ac.kr/"
 
-  - name: "조광현"
-    image: "/assets/imgs/people/조광현.jpg"
+  - name: "조병관"
+    image: "/assets/imgs/people/조병관.jpg"
     position: "위원"
-    college: "바이오및뇌공학과"
+    college: "생명과학과"
     socialmedia:
       - type: homepage
-        link: "https://sbie.kaist.ac.kr/"
+        link: "http://cholab.or.kr/"
 
   - name: "오혜연"
     image: "/assets/imgs/people/오혜연.jpg"
-    position: "위원"
+    position: "위원장"
     college: "전산학부"
     socialmedia:
       - type: homepage
@@ -164,21 +165,21 @@ social:
 
 #------ 교육위원회
 education:
-  - name: "류석영"
-    image: "/assets/imgs/people/류석영.png"
+  - name: "오혜연"
+    image: "/assets/imgs/people/오혜연.png"
     position: "위원장"
     college: "전산학부"
     socialmedia:
       - type: homepage
-        link: "https://plrg.kaist.ac.kr/"
+        link: "https://uilab.kr/"
 
-  - name: "조광현"
-    image: "/assets/imgs/people/조광현.jpg"
+  - name: "조병관"
+    image: "/assets/imgs/people/조병관.jpg"
     position: "위원"
-    college: "바이오및뇌공학과"
+    college: "생명과학과"
     socialmedia:
       - type: homepage
-        link: "https://sbie.kaist.ac.kr/"
+        link: "http://cholab.or.kr/"
 
   - name: "서창호"
     image: "/assets/imgs/people/서창호.JPG"
@@ -246,29 +247,21 @@ education:
 
 #-------연구위원회
 research:
-  - name: "류석영"
-    image: "/assets/imgs/people/류석영.png"
+  - name: "오혜연"
+    image: "/assets/imgs/people/오혜연.png"
     position: "위원장"
     college: "전산학부"
     socialmedia:
       - type: homepage
-        link: "https://plrg.kaist.ac.kr/"
-
-  - name: "조광현"
-    image: "/assets/imgs/people/조광현.jpg"
-    position: "위원"
-    college: "바이오및뇌공학과"
-    socialmedia:
-      - type: homepage
-        link: "https://sbie.kaist.ac.kr/"
-
-  - name: "오혜연"
-    image: "/assets/imgs/people/오혜연.jpg"
-    position: "위원"
-    college: "전산학부"
-    socialmedia:
-      - type: homepage
         link: "https://uilab.kr/"
+
+  - name: "조병관"
+    image: "/assets/imgs/people/조병관.jpg"
+    position: "위원"
+    college: "생명과학과"
+    socialmedia:
+      - type: homepage
+        link: "http://cholab.or.kr//"
 
   - name: "김우연"
     image: "/assets/imgs/people/김우연.png"
@@ -328,21 +321,21 @@ research:
 
 #-------- 협력위원회
 coop:
-  - name: "류석영"
-    image: "/assets/imgs/people/류석영.png"
+  - name: "오혜연"
+    image: "/assets/imgs/people/오혜연.png"
     position: "위원장"
     college: "전산학부"
     socialmedia:
       - type: homepage
-        link: "https://plrg.kaist.ac.kr/"
+        link: "https://uilab.kr/"
 
-  - name: "조광현"
-    image: "/assets/imgs/people/조광현.jpg"
+  - name: "조병관"
+    image: "/assets/imgs/people/조병관.jpg"
     position: "위원"
-    college: "바이오및뇌공학과"
+    college: "생명과학과"
     socialmedia:
       - type: homepage
-        link: "https://sbie.kaist.ac.kr/"
+        link: "http://cholab.or.kr/"
 
   - name: "서창호"
     image: "/assets/imgs/people/서창호.JPG"
