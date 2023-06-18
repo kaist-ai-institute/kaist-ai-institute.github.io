@@ -3,7 +3,7 @@ layout: home
 ---
 
 <main>
-	<!-- <section class="slider-wrapper home-banner">
+  <!-- <section class="slider-wrapper home-banner">
 		<button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
 
 		<button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
@@ -16,151 +16,165 @@ layout: home
 		</ul>
 	</section> -->
 
-	<div id="home-banner">
-		<!-- <div class="banner-overlay">카이스트 인공지능연구원</div> -->
-		<div id="cover">
-			<div id="cover-left" onclick="prevCover()">
-			</div>
-			<div id="cover-right" onclick="nextCover()">
-			</div>
-		</div>
-	</div>
-	<div></div>
-	{% assign notice = site.categories.notice %}
+  <div id="home-banner">
+    <!-- <div class="banner-overlay">카이스트 인공지능연구원</div> -->
+    <div id="cover">
+      <div id="cover-left" onclick="prevCover()"></div>
+      <div id="cover-right" onclick="nextCover()"></div>
+    </div>
+  </div>
+  <div></div>
+  {% assign notice = site.categories.notice %}
 
-	<div class="contentWrapper col-3-wrapper">
-		<div id="notice-home" class="home-section">
-			<div class="section-title-wrapper">
-				<div class="section-title">Notice <i class="fa-regular fa-circle-caret-left"></i></div>
-				<a class="section-title-link" href="{{site.baseurl}}/notice">+ 더보기</a>
-			</div>
-			{%- for post in notice limit : 6 -%}
-			<div class="post-item">
-				<a class="post-link" href="{{ post.url | relative_url }}"> {{ post.title | escape }} </a>
-				<div class="post-meta">{{ post.date | date: "%Y.%m.%d" }}</div>
-			</div>
-			{%- endfor -%}
-		</div>
+  <div class="contentWrapper col-3-wrapper">
+    <div id="notice-home" class="home-section">
+      <div class="section-title-wrapper">
+        <div class="section-title">
+          Notice <i class="fa-regular fa-circle-caret-left"></i>
+        </div>
+        <a class="section-title-link" href="{{site.baseurl}}/notice"
+          >+ 더보기</a
+        >
+      </div>
+      {%- for post in notice limit : 6 -%}
+      <div class="post-item">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+        <div class="post-meta">{{ post.date | date: "%Y.%m.%d" }}</div>
+      </div>
+      {%- endfor -%}
+    </div>
 
-		<div id="seminar-home" class="home-section">  
-			<div class="section-title-wrapper">
-				<div class="section-title">Upcoming Seminar</div>
-				<a class="section-title-link" href="{{site.baseurl}}/seminar">+ 더보기</a>
-			</div>
-			<div class="seminar-list-home">
-				{% assign upcoming = site.data.seminar.upcoming %} {% for seminar in upcoming limit : 1 %}
-				<div class="seminar-item">
-					<div class="seminar-date">{{seminar.date}}</div>
-					<div class="seminar-sublist">
-						{% for session in seminar.sessions %}
-						<div class="seminar-subitem">
-							<div class="seminar-title">{{session.title}}</div>
-							<div>
-								<div class="seminar-presenter">
-									<div class="seminar-label">발제</div>
-									<div class="seminar-name">{{session.presenter}}</div>
-								</div>
-								<div class="seminar-debater">
-									<div class="seminar-label">토론</div>
-									<div class="seminar-name">{{session.debater}}</div>
-								</div>
-							</div>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-				{% endfor %}
-			</div>
-		</div>
+    <div id="seminar-home" class="home-section">
+      <div class="section-title-wrapper">
+        <div class="section-title">Upcoming Seminar</div>
+        <a class="section-title-link" href="{{site.baseurl}}/seminar/deepdive/"
+          >+ 더보기</a
+        >
+      </div>
+      <div class="seminar-list-home">
+        {% assign upcoming = site.data.seminar-deepdive.upcoming %} {% for
+        seminar in upcoming limit : 1 %}
+        <div class="seminar-item">
+          <div class="seminar-date">{{seminar.date}}</div>
+          <div class="seminar-sublist">
+            {% for session in seminar.sessions %}
+            <div class="seminar-subitem">
+              <div class="seminar-title">{{session.title}}</div>
+              <div>
+                <div class="seminar-presenter">
+                  <div class="seminar-label">발제</div>
+                  <div class="seminar-name">{{session.presenter}}</div>
+                </div>
+                <div class="seminar-debater">
+                  <div class="seminar-label">토론</div>
+                  <div class="seminar-name">{{session.debater}}</div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
 
-		<div id="event-home" class="home-section">
-			<div class="section-title-wrapper">
-				<div class="section-title">Events</div>
-				<a class="section-title-link" href="{{site.baseurl}}/events">+ 더보기</a>
-			</div>
-			{% assign events = site.categories.events %} {%- for post in events limit : 2 -%}
-			<div class="post-item">
-				<a class="post-link" href="{{ post.url | relative_url }}"> {{ post.title | escape }} </a>
-				<div class="post-meta">{{ post.event-date | date: "%Y.%m.%d"  }}</div>
-			</div>
-			{%- endfor -%}
-		</div>
-	</div>
+    <div id="event-home" class="home-section">
+      <div class="section-title-wrapper">
+        <div class="section-title">Events</div>
+        <a class="section-title-link" href="{{site.baseurl}}/events"
+          >+ 더보기</a
+        >
+      </div>
+      {% assign events = site.categories.events %} {%- for post in events limit
+      : 2 -%}
+      <div class="post-item">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+        <div class="post-meta">{{ post.event-date | date: "%Y.%m.%d" }}</div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
 
-	<div class="col-1-wrapper" id="major-home">
-		<div class="major-wrapper">
-			<div class="contentWrapper">
-				<div class="section-title">AI 특별지정전공 안내</div>
-				<div>진입과 이수요건에 대한 정보를 확인하세요.</div>
-				<a href="{{ '/major/' | relative_url }}">상세 정보 확인하러 가기</a>
-			</div>
-			
-		</div>
-	</div>
+  <div class="col-1-wrapper" id="major-home">
+    <div class="major-wrapper">
+      <div class="contentWrapper">
+        <div class="section-title">AI 특별지정전공 안내</div>
+        <div>진입과 이수요건에 대한 정보를 확인하세요.</div>
+        <a href="{{ '/major/' | relative_url }}">상세 정보 확인하러 가기</a>
+      </div>
+    </div>
+  </div>
 
-	{% assign news = site.categories.news %}
+  {% assign news = site.categories.news %}
 
-	<div class="contentWrapper col-1-wrapper">
-		<div class="home-section" id="news-home">
-			<div class="section-title">News</div>
+  <div class="contentWrapper col-1-wrapper">
+    <div class="home-section" id="news-home">
+      <div class="section-title">News</div>
 
-			<div class="news-list">
-				{%- for item in news limit: 4 -%}
-				<div class="news-item">
-					<div
-						class="news-img"
-						style="background-image:
-                url({{item.image}})"></div>
-					<a class="news-link" href="{{ item.url | relative_url }}"> {{ item.title | escape }} </a>
-					<div class="post-meta">{{ item.date | date: "%Y.%m.%d" }}</div>
-				</div>
-				{%- endfor -%}
-			</div>
-		</div>
-	</div>
+      <div class="news-list">
+        {%- for item in news limit: 4 -%}
+        <div class="news-item">
+          <div
+            class="news-img"
+            style="background-image:
+                url({{item.image}})"
+          ></div>
+          <a class="news-link" href="{{ item.url | relative_url }}">
+            {{ item.title | escape }}
+          </a>
+          <div class="post-meta">{{ item.date | date: "%Y.%m.%d" }}</div>
+        </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
 </main>
 
 <script>
-	let date = new Date();
-	let month = date.getMonth();
-	month = month + 1;
+  let date = new Date();
+  let month = date.getMonth();
+  month = month + 1;
 
-	let banner = document.getElementById("home-banner");
-	banner.className = "cover1";
-	// if (month == 1 || month == 2 || month == 12) {
-	// 	banner.className = "winter";
-	// } else if (month == 3 || month == 4 || month == 5) {
-	// 	banner.className = "spring";
-	// } else if (month == 6 || month == 7 || month == 8) {
-	// 	banner.className = "summer";
-	// } else if (month == 9 || month == 10 || month == 11) {
-	// 	banner.className = "fall";
-	// }
+  let banner = document.getElementById("home-banner");
+  banner.className = "cover1";
+  // if (month == 1 || month == 2 || month == 12) {
+  // 	banner.className = "winter";
+  // } else if (month == 3 || month == 4 || month == 5) {
+  // 	banner.className = "spring";
+  // } else if (month == 6 || month == 7 || month == 8) {
+  // 	banner.className = "summer";
+  // } else if (month == 9 || month == 10 || month == 11) {
+  // 	banner.className = "fall";
+  // }
 
-	let coverNum = 1;
-	let autoRotateInterval = setInterval(()=>{
-		coverNum++;
-		if(coverNum==5) coverNum = 1;
-		console.log(coverNum);
-		let banner = document.getElementById("home-banner");
-		banner.className = "cover"+coverNum;
-	},4000);
-	function prevCover() {
-		clearInterval(autoRotateInterval);
-		console.log("prev");
-		coverNum--;
-		if(coverNum==0) coverNum = 4;
-		console.log(coverNum);
-		let banner = document.getElementById("home-banner");
-		banner.className = "cover"+coverNum;
-	}
-	function nextCover() {
-		clearInterval(autoRotateInterval);
-		console.log("next");
-		coverNum++;
-		if(coverNum==5) coverNum = 1;
-		console.log(coverNum);
-		let banner = document.getElementById("home-banner");
-		banner.className = "cover"+coverNum;
-	}
+  let coverNum = 1;
+  let autoRotateInterval = setInterval(() => {
+    coverNum++;
+    if (coverNum == 5) coverNum = 1;
+    console.log(coverNum);
+    let banner = document.getElementById("home-banner");
+    banner.className = "cover" + coverNum;
+  }, 4000);
+  function prevCover() {
+    clearInterval(autoRotateInterval);
+    console.log("prev");
+    coverNum--;
+    if (coverNum == 0) coverNum = 4;
+    console.log(coverNum);
+    let banner = document.getElementById("home-banner");
+    banner.className = "cover" + coverNum;
+  }
+  function nextCover() {
+    clearInterval(autoRotateInterval);
+    console.log("next");
+    coverNum++;
+    if (coverNum == 5) coverNum = 1;
+    console.log(coverNum);
+    let banner = document.getElementById("home-banner");
+    banner.className = "cover" + coverNum;
+  }
 </script>

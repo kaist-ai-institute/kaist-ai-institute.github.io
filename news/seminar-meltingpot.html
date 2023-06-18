@@ -1,0 +1,40 @@
+---
+layout: page
+title: "Melting Pot Seminar"
+category: 소식
+permalink: "seminar/meltingpot/"
+---
+
+<img src="../assets/news/melting-pot-seminar-poster.png" />
+
+<div id="seminar-list">
+  {% for seminar in site.data.seminar-meltingpot.current_year %}
+  <div class="seminar-item">
+    <div class="seminar-date">{{seminar.date}}</div>
+    <div class="seminar-sublist">
+      {% for session in seminar.sessions %}
+      <div class="seminar-subitem">
+        <div class="seminar-title">{{session.title}}</div>
+        <div class="seminar-presenter">
+          <div class="seminar-label">발제</div>
+          <div class="seminar-name">{{session.presenter}}</div>
+        </div>
+        <div class="seminar-debater">
+          <div class="seminar-label">토론</div>
+          <div class="seminar-name">{{session.debater}}</div>
+        </div>
+        {% if session.link %}
+        <a class="seminar-video" href="{{session.link}}" target="_blank"
+          ><img src="/assets/imgs/movie-videos-icon.svg" />
+        </a>
+        {% endif %}
+      </div>
+      {% endfor %} {% if seminar.link %}
+      <a class="seminar-video" href="{{session.link}}" target="_blank">
+        <img src="/assets/imgs/movie-videos-icon.svg" />
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
