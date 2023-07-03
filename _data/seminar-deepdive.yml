@@ -27,6 +27,13 @@ current_year:
         debater: "이영민 교수(화학과), 김지한 교수(생명화학공학과)"
         link: "https://www.youtube.com/watch?v=UEYMt_HrNNg&list=PLzZ7PPT4KK5r7cPSQdemnrSHNVxaszGSp&index=1"
 
+  - date: "2023. 06. 23"
+    sessions:
+      - title: "Symbolic reasening in the era of deep learning"
+        presenter: "양홍석 교수(전산학부)"
+        debater: "안성진 교수(전산학부), 허기홍 교수(전산학부)"
+        link: "https://www.youtube.com/watch?v=--q8_s_xutk"
+
 
 upcoming:
   - date: "2023. 06. 23"
