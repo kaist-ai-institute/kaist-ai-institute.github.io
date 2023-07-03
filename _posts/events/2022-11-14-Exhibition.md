@@ -6,4 +6,4 @@ event-date: "2022-11-14"
 categories: events
 ---
 
-![]({{site.baseurl}}/assets/news/220221114_Exhibition Poster.jpg)
+![]({{site.baseurl}}/assets/news/20221114_Exhibition Poster.jpg)
