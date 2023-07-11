@@ -155,6 +155,7 @@ upcoming: # 예시
 만약 Melting Pot Seminar 자체가 이후 지속되지 않을 경우, 해당 메뉴와 페이지를 숨기기 위해 별도로 웹사이트를 수정해야 합니다. 이 경우 연락 주세요.
 
 **4. 이미지를 변경 혹은 추가하는 경우**
+
 `assets/news/` 폴더에 사용하고자 하는 이미지를 추가 후, `news/seminar-deepdive` 파일에서 이미지 태그의 `src` 부분을 
 ```
 <img src="/assets/news/{사용하고자 하는 이미지 이름}.png" />
