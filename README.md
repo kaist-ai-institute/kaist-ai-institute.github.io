@@ -48,6 +48,10 @@ topic: "공지사항 토픽"
 
 `date: yyyy-mm-dd hh:mm:ss +0900` 양식 또한 지켜 주세요. 시간은 임의로 00:00:00 등을 작성해 주셔도 무관합니다.
 
+## 공지사항 삭제하기
+
+기존의 공지 사항을 삭제하시는 경우, `_posts/notice` 디렉토리에서 삭제하고자 하는 공지사항에 해당하는 파일을 삭제하시면 됩니다. 
+
 ## 행사/세미나
 
 행사/세미나 정보는 홈페이지 내의 **Events** 메뉴와, `소식 > 행사/세미나 안내` 메뉴에서 노출됩니다.
@@ -95,9 +99,9 @@ admin:
 
 .yml 파일의 경우, **들여쓰기 형식이 다를 경우 오류가 발생하거나 업데이트가 되지 않을 수 있습니다**. 새로운 항목을 추가했는데도 웹사이트에 반영되지 않은 경우 들여쓰기를 확인해 주세요. (들여쓰기는 tab을 사용해 주시면 됩니다.)
 
-## Melting Pot Seminar 정보 업데이트하기
+## DeepDive Seminar 정보 업데이트하기
 
-Melting Pot Seminar 정보는 `_data/members.yml` 파일에서 관리합니다.
+DeepDive Seminar 정보는 `_data/seminar-deepdive.yml` 파일에서 관리합니다.
 
 **1. 이미 진행된 세미나**
 
@@ -149,6 +153,13 @@ upcoming: # 예시
 `current_year` 항목 하위에 있는 모든 내용을 최하단의 `past_years` 이하로 넣어 주시면 됩니다. 새로운 연도의 정보는 이후 `upcoming` 및 `current_year` 항목에 새로 추가해 주시면 됩니다. `past_years` 하위로 옮겨진 내용은 Melting Pot Seminar 페이지 내에 더 이상 노출되지 않습니다.
 
 만약 Melting Pot Seminar 자체가 이후 지속되지 않을 경우, 해당 메뉴와 페이지를 숨기기 위해 별도로 웹사이트를 수정해야 합니다. 이 경우 연락 주세요.
+
+**4. 이미지를 변경 혹은 추가하는 경우**
+`assets/news/` 폴더에 사용하고자 하는 이미지를 추가 후, `news/seminar-deepdive` 파일에서 이미지 태그의 `src` 부분을 
+```
+<img src="/assets/news/{사용하고자 하는 이미지 이름}.png" />
+```
+으로 수정해주시면 됩니다.
 
 # 기타 수정 요청 및 문의 사항
 
