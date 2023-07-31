@@ -7,6 +7,9 @@ permalink: "major/"
 
 [학사요람 시스템에서 최신 정보 확인하기 (ENG included)](https://bulletin.kaist.ac.kr/html/kr/?year=2023&id=kr20230304&gbn=E1)
 
+[AI 특별지정전공 소개(YouTube)](https://www.youtube.com/watch?v=eZ6w5fJ_AUg)
+
+
 ## **[2023학년도 이후 이수신청자용]**
 
 #### **졸업이수학점: 총 18학점 이상 이수**
