@@ -6,6 +6,8 @@ permalink: "major/"
 ---
 
 [학사요람 시스템에서 최신 정보 확인하기 (ENG included)](https://bulletin.kaist.ac.kr/html/kr/?year=2023&id=kr20230304&gbn=E1)
+[AI Special Designated Major](https://www.youtube.com/watch?v=eZ6w5fJ_AUg)
+
 
 ## **[2023학년도 이후 이수신청자용]**
 
