@@ -1,26 +1,26 @@
-#----- sub 설명
+#----- 위원회 설명
 explanation:
-  - management:
+  - management: #운영자문위원회
     - goal: "연구원 운영에 관한 주요사항에 대한 자문 및 심의" 
-      role: |
-        연구원의 기본 운영계획 
-        연구원 산하 연구조직의 설치, 폐쇄 
-        기타 연구원 운영에 필요한 중요 사항
-  - social:
+      roles: 
+        - item: 연구원의 기본 운영계획 
+        - item: 연구원 산하 연구조직의 설치, 폐쇄 
+        - item: 기타 연구원 운영에 필요한 중요 사항
+  - social: #사회위원회
     - goal:
-      roal:
-  - education:
+      roles:
+  - education: #교육위원회
     - goal:
-      roal:
-  - research: 
+      roles:
+  - research: #연구위원회
     - goal:
-      roal:
-  - coop:
+      roles:
+  - coop: #협력위원회
     - goal:
-      roal:
-  - admin: 
+      roles:
+  - admin: #함께하는 분들
     - goal:
-      roal:
+      roles:
 
 
 #------ 운영자문위원회

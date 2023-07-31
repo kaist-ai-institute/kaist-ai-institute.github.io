@@ -6,14 +6,15 @@ permalink: "members/1/"
 ---
 
 <div class="member-exp">
-	<div class="member-goal"><b>위원회 설치 목적:</b> 
-			<div>{{site.data.members.explanation[0].management[0].goal}}</div>
-		</div>
+	<div class="member-goal"><b>위원회 설치 목적:</b> {{site.data.members.explanation[0].management[0].goal}}</div>
 	<br/>
 	<div class="member-role"><b>위원회 기능 및 역할:</b>
-		<div>{{site.data.members.explanation[0].management[0].role | preserve_line_breaks }}</div>
+		<ul>
+			{% for roles in site.data.members.explanation[0].management[0].roles %}
+				<li>{{roles.item}}</li>
+			{% endfor %}
+		</ul>
 	</div>
-	<br/>
 	<br/>
 </div>
 
