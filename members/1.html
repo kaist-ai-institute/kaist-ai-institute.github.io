@@ -5,6 +5,18 @@ category: 사람들
 permalink: "members/1/"
 ---
 
+<div class="member-exp">
+	<div class="member-goal"><b>위원회 설치 목적:</b> 
+			<div>{{site.data.members.explanation[0].management[0].goal}}</div>
+		</div>
+	<br/>
+	<div class="member-role"><b>위원회 기능 및 역할:</b>
+		<div>{{site.data.members.explanation[0].management[0].role | preserve_line_breaks }}</div>
+	</div>
+	<br/>
+	<br/>
+</div>
+
 {% assign members = site.data.members.management | sort:"name" %} {% for member in members %} {%
 assign url = site.baseurl | append: member.image %}
 

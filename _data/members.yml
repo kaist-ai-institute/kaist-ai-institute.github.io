@@ -1,4 +1,28 @@
----
+#----- sub 설명
+explanation:
+  - management:
+    - goal: "연구원 운영에 관한 주요사항에 대한 자문 및 심의" 
+      role: |
+        연구원의 기본 운영계획 
+        연구원 산하 연구조직의 설치, 폐쇄 
+        기타 연구원 운영에 필요한 중요 사항
+  - social:
+    - goal:
+      roal:
+  - education:
+    - goal:
+      roal:
+  - research: 
+    - goal:
+      roal:
+  - coop:
+    - goal:
+      roal:
+  - admin: 
+    - goal:
+      roal:
+
+
 #------ 운영자문위원회
 management:
   - name: "류석영"
