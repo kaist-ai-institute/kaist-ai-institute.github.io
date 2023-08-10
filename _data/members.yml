@@ -130,7 +130,7 @@ social:
 
   - name: "오혜연"
     image: "/assets/imgs/people/오혜연.jpg"
-    position: "위원장"
+    position: "위원"
     college: "전산학부"
     socialmedia:
       - type: homepage
@@ -146,7 +146,7 @@ social:
 
   - name: "박경렬"
     image: "/assets/imgs/people/박경렬.webp"
-    position: "위원"
+    position: "위원장"
     college: "과학기술정책대학원"
     socialmedia:
       - type: homepage
@@ -196,7 +196,7 @@ social:
 education:
   - name: "오혜연"
     image: "/assets/imgs/people/오혜연.jpg"
-    position: "위원장"
+    position: "위원"
     college: "전산학부"
     socialmedia:
       - type: homepage
@@ -212,7 +212,7 @@ education:
 
   - name: "서창호"
     image: "/assets/imgs/people/서창호.JPG"
-    position: "위원"
+    position: "위원장"
     college: "전기및전자공학부"
     socialmedia:
       - type: homepage
@@ -278,7 +278,7 @@ education:
 research:
   - name: "오혜연"
     image: "/assets/imgs/people/오혜연.jpg"
-    position: "위원장"
+    position: "위원"
     college: "전산학부"
     socialmedia:
       - type: homepage
@@ -334,7 +334,7 @@ research:
 
   - name: "최한림"
     image: "/assets/imgs/people/최한림.jpg"
-    position: "위원"
+    position: "위원장"
     college: "항공우주공학과"
     socialmedia:
       - type: homepage
@@ -344,7 +344,7 @@ research:
 coop:
   - name: "오혜연"
     image: "/assets/imgs/people/오혜연.jpg"
-    position: "위원장"
+    position: "위원"
     college: "전산학부"
     socialmedia:
       - type: homepage
@@ -368,7 +368,7 @@ coop:
 
   - name: "김민혁"
     image: "/assets/imgs/people/김민혁.jpg"
-    position: "위원"
+    position: "위원장"
     college: "전산학부"
     socialmedia:
       - type: homepage

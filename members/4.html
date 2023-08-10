@@ -18,14 +18,15 @@ permalink: "members/4/"
 	<br/>
 </div>
 
-{% assign members = site.data.members.research | sort:"name" %} {% for member in members %}{% assign
-url = site.baseurl | append: member.image %}
 
+{% assign members = site.data.members.research | where: "position", "위원장" | sort: "name" %} 
+{% for member in members %} 
+{% assign url = site.baseurl | append: member.image %}
 <div class="member-item">
 	<div
 		class="member-image"
 		style="background-image:
-            url({{url}})"></div>
+        url({{url}})"></div>
 	<div class="member-details">
 		<div class="member-name">{{member.name}}</div>
 		<div class="member-position">{{member.position}}</div>
@@ -41,5 +42,29 @@ url = site.baseurl | append: member.image %}
 		</div>
 	</div>
 </div>
+{% endfor %}
 
+{% assign members = site.data.members.research | where: "position", "위원" | sort: "name" %} 
+{% for member in members %} 
+{% assign url = site.baseurl | append: member.image %}
+<div class="member-item">
+	<div
+		class="member-image"
+		style="background-image:
+        url({{url}})"></div>
+	<div class="member-details">
+		<div class="member-name">{{member.name}}</div>
+		<div class="member-position">{{member.position}}</div>
+		<div class="member-college">{{member.college}}</div>
+		<div class="member-socialmedia">
+			{% for media in member.socialmedia %} {% if media.type == "homepage" %}
+			<i class="fa-solid fa-house-chimney"></i>
+			<a href="{{media.link}}">{{media.link}}</a>
+			{% endif %} {% if media.type == "email" %}
+			<i class="fa-solid fa-envelope"></i>
+			<a href="mailto:{{media.link}}">{{media.link}}</a>
+			{% endif %} {% endfor %}
+		</div>
+	</div>
+</div>
 {% endfor %}
