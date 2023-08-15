@@ -44,7 +44,7 @@ permalink: "members/5/"
 </div>
 {% endfor %}
 
-{% assign members = site.data.members.coop | where_exp: "members", "members.position == '위원장' or members.position == '위원'" | sort: "name" %} 
+{% assign members = site.data.members.coop | where_exp: "members", "members.position != '대표위원'" | sort: "name" %} 
 {% for member in members %} 
 {% assign url = site.baseurl | append: member.image %}
 <div class="member-item">
