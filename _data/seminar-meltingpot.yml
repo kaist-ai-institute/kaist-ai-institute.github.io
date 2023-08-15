@@ -114,23 +114,6 @@ current_year:
 
 
 upcoming:
-  - date: "2022. 09. 02"
-    sessions:
-      - title: "AI와 뉴스"
-        presenter: "차미영(전산학부)"
-        debater: "한지영(문술미래전략대학원)"
-
-      - title: AI와 국제정치경제
-        presenter: 박경렬(과학기술정책대학원)
-        debater: 오혜연(전산학부)
-
-  - date: "2022. 10. 07"
-    sessions:
-      - title: "AI와 사회복지"
-        presenter: "최문정(과학기술정책대학원)"
-        debater: "김우창(산업및시스템공학과)"
-      - title: AI와 모빌리티
-        presenter: 윤국진(기계공학과)
-        debater: 장기태(조천식녹색교통대학원)
+ 
 
 past_years:
