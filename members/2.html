@@ -18,7 +18,7 @@ permalink: "members/2/"
 	<br/>
 </div>
 
-{% assign members = site.data.members.social | where: "position", "위원장" | sort: "name" %} 
+{% assign members = site.data.members.social | where: "position", "대표위원" | sort: "name" %} 
 {% for member in members %} 
 {% assign url = site.baseurl | append: member.image %}
 <div class="member-item">
@@ -43,7 +43,7 @@ permalink: "members/2/"
 </div>
 {% endfor %}
 
-{% assign members = site.data.members.social | where: "position", "위원" | sort: "name" %} 
+{% assign members = site.data.members.social | where_exp: "members", "members.position == '위원장' or members.position == '위원'" | sort: "name" %} 
 {% for member in members %} 
 {% assign url = site.baseurl | append: member.image %}
 <div class="member-item">
