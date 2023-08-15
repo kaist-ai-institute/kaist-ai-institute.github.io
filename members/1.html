@@ -43,7 +43,7 @@ permalink: "members/1/"
 </div>
 {% endfor %}
 
-{% assign members = site.data.members.management | where: "position", "위원" | sort: "name" %} 
+{% assign members = site.data.members.management | where_exp: "members", "members.position == '위원'" | sort: "name" %} 
 {% for member in members %} 
 {% assign url = site.baseurl | append: member.image %}
 <div class="member-item">
