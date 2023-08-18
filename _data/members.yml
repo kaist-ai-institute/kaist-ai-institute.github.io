@@ -5,6 +5,7 @@ explanation:
       roles: 
         - item: 연구원의 기본 운영계획
         - item: 연구원 산하 연구조직의 설치, 폐쇄
+        - item: 소속 연구교원 및 연구원의 채용계획       
         - item: 기타 연구원 운영에 필요한 중요 사항
   - social: #사회위원회
     - goal: "인공지능 연구가 사회에 미치는 영향에 대한 연구 자문"
@@ -40,19 +41,11 @@ management:
 
   - name: "조병관"
     image: "/assets/imgs/people/조병관.jpg"
-    position: "위원"
+    position: "위원장"
     college: "생명과학과"
     socialmedia:
       - type: homepage
         link: "http://cholab.or.kr/"
-
-  - name: "오혜연"
-    image: "/assets/imgs/people/오혜연.jpg"
-    position: "위원장"
-    college: "전산학부"
-    socialmedia:
-      - type: homepage
-        link: "https://uilab.kr/"
 
   - name: "서창호"
     image: "/assets/imgs/people/서창호.JPG"
@@ -122,19 +115,11 @@ social:
 
   - name: "조병관"
     image: "/assets/imgs/people/조병관.jpg"
-    position: "위원"
+    position: "위원장"
     college: "생명과학과"
     socialmedia:
       - type: homepage
         link: "http://cholab.or.kr/"
-
-  - name: "오혜연"
-    image: "/assets/imgs/people/오혜연.jpg"
-    position: "위원장"
-    college: "전산학부"
-    socialmedia:
-      - type: homepage
-        link: "https://uilab.kr/"
 
   - name: "김란우"
     image: "/assets/imgs/people/김란우.jpg"
@@ -194,17 +179,9 @@ social:
 
 #------ 교육위원회
 education:
-  - name: "오혜연"
-    image: "/assets/imgs/people/오혜연.jpg"
-    position: "위원장"
-    college: "전산학부"
-    socialmedia:
-      - type: homepage
-        link: "https://uilab.kr/"
-
   - name: "조병관"
     image: "/assets/imgs/people/조병관.jpg"
-    position: "위원"
+    position: "위원장"
     college: "생명과학과"
     socialmedia:
       - type: homepage
@@ -276,17 +253,9 @@ education:
 
 #-------연구위원회
 research:
-  - name: "오혜연"
-    image: "/assets/imgs/people/오혜연.jpg"
-    position: "위원장"
-    college: "전산학부"
-    socialmedia:
-      - type: homepage
-        link: "https://uilab.kr/"
-
   - name: "조병관"
     image: "/assets/imgs/people/조병관.jpg"
-    position: "위원"
+    position: "위원장"
     college: "생명과학과"
     socialmedia:
       - type: homepage
@@ -342,17 +311,9 @@ research:
 
 #-------- 협력위원회
 coop:
-  - name: "오혜연"
-    image: "/assets/imgs/people/오혜연.jpg"
-    position: "위원장"
-    college: "전산학부"
-    socialmedia:
-      - type: homepage
-        link: "https://uilab.kr/"
-
   - name: "조병관"
     image: "/assets/imgs/people/조병관.jpg"
-    position: "위원"
+    position: "위원장"
     college: "생명과학과"
     socialmedia:
       - type: homepage
