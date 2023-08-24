@@ -1,7 +1,4 @@
 current_year:
-
-
-upcoming:
   - date: "2023. 09. 01"
     sessions:
       - title: "인공지능이 맞딱뜨린 법률 문제"
@@ -17,6 +14,13 @@ upcoming:
   - date: "2023. 12. 01"
     sessions:
       - title: "코딩에 윤리 심기 (embedded ethics)"
+        presenter: "이숙연 특허법원 고법판사"
+        debater: 
+
+upcoming:
+  - date: "2023. 09. 01"
+    sessions:
+      - title: "인공지능이 맞딱뜨린 법률 문제"
         presenter: "이숙연 특허법원 고법판사"
         debater: 
 
