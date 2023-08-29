@@ -49,12 +49,12 @@ layout: home
     <div id="seminar-home" class="home-section">
       <div class="section-title-wrapper">
         <div class="section-title">세미나</div>
-        <a class="section-title-link" href="{{site.baseurl}}/seminar/deepdive/"
+        <a class="section-title-link" href="{{site.baseurl}}/seminar/ai-law/"
           >+ 더보기</a
         >
       </div>
       <div class="seminar-list-home">
-        {% assign upcoming = site.data.seminar-deepdive.upcoming %} {% for
+        {% assign upcoming = site.data.seminar-ai-law.upcoming %} {% for
         seminar in upcoming limit : 1 %}
         <div class="seminar-item">
           <div class="seminar-date">{{seminar.date}}</div>
@@ -67,10 +67,12 @@ layout: home
                   <div class="seminar-label">발제</div>
                   <div class="seminar-name">{{session.presenter}}</div>
                 </div>
+                {% if session.debater %}
                 <div class="seminar-debater">
                   <div class="seminar-label">토론</div>
                   <div class="seminar-name">{{session.debater}}</div>
                 </div>
+                {% endif %}
               </div>
             </div>
             {% endfor %}
