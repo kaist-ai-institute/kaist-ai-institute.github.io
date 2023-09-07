@@ -16,9 +16,9 @@ current_year:
 
   
 upcoming:
-  - date: "2023. 09. 01"
+  - date: "2023. 10. 27"
     sessions:
-      - title: "인공지능이 맞딱뜨린 법률 문제"
+      - title: "각국의 인공지능 관련 규범 수립 동향"
         presenter: "이숙연 특허법원 고법판사"
 
 
